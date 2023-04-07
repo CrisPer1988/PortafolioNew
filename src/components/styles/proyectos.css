@@ -1,0 +1,37 @@
+.content__proyectos {
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+
+   
+}
+
+.img__proyectos {
+    margin: 0 auto;   
+}
+
+
+.content__info-proyectos {
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1.5rem;
+align-items: center;
+color: rgba(0, 0, 0, 0); 
+position: absolute;
+top: 0;
+text-align: center;
+transform: translateX(-150px);
+transition: transform 0.8s;
+}
+
+.content__info-proyectos:hover {
+    padding: 0 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.741);
+    border-radius: 10px;
+    transform: translateX(0);
+}
+
