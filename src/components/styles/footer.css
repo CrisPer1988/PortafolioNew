@@ -1,0 +1,41 @@
+.container__footer {
+    background-color: rgb(35, 35, 35);
+    padding: 20px 0;
+}
+
+.icons__footer {
+    display: flex ;
+    justify-content: space-around;
+    font-size: 3rem;
+}
+
+.item__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 2px 2px rgb(34, 34, 33);  
+    transition: transform 0.5s;
+}
+
+.item__icons:hover {
+    transform: scale(1.2);
+}
+
+.item__icons a {
+    color: rgb(14, 24, 139);
+}
+
+.item__icons a:hover {
+    color: rgb(11, 100, 30);
+}
+
+.createBy {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}

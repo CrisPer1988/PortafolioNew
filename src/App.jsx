@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
-import { Button} from 'react-bootstrap'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Proyectos from './components/Proyectos'
 import Habilidades from './components/Habilidades'
+import FormularioDeContacto from './components/FormularioDeContacto'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     
     <Proyectos />
     <Habilidades />
+    <FormularioDeContacto />
+    <Footer />
     </div>
   )
 }

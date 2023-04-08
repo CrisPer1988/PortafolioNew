@@ -9,10 +9,12 @@ const Proyectos = () => {
 
   return (
     <div id='proyectos' className='container-md content__proyectos'>
+      <div className='text__proyectos'>
       <h2>Proyectos</h2>
       <p>En esta seccion te mostrare algunos de mis proyectos preferidos. Pasa el raton por
         encima para acceder al link de muestra y a la descripcion de cada proyecto. Espero 
         que lo disfrutes tanto como yo disfrute al realizarlos. </p>
+      </div>
        
        <Carousel variant="dark">
        {
@@ -27,10 +29,8 @@ const Proyectos = () => {
                 />
                 <div className='content__info-proyectos'>    
                 <h3 className='title__descripcion'>{image.descripcion}</h3>
-                <Nav.Link href={image.link} target="_blank">{image.link}</Nav.Link>
-                {/* <a href={image.link} target='_blank'>{image.link}</a> */}                            
-                  </div>
-                     
+                <Nav.Link href={image.link} target="_blank">{image.link}</Nav.Link>                     
+                  </div>     
               </Carousel.Item>
       
             ))

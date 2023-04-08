@@ -1,17 +1,23 @@
 .contaniner__habilidades {
-    background-color: rgb(128, 90, 18);
+    background-color: rgb(0, 149, 127);
     padding-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     color: white;
+}
 
-
+.text__habilidades{
+    padding: 0 20px;
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+    margin: 0 auto;
 }
 
 .lista__habilidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+   
 }
 
 .img__habilidades {
@@ -40,11 +46,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2.5rem;
-    padding-top: 50px;
-}
-
-.img__relative {
-    position: relative;
+    padding: 50px 0;
 }
 
 
@@ -71,7 +73,7 @@
 
     .habilidad__grid {
         
-        grid-template-columns: 1fr 1fr;
+        /*grid-template-columns: 1fr 1fr;*/
         gap: 0.5rem;
        
     }

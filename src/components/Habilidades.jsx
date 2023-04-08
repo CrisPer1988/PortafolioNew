@@ -6,6 +6,7 @@ import "./styles/habilidades.css"
 const Habilidades = () => {
   return (
     <section id='habilidades' className='container-md contaniner__habilidades'>
+        <div className='text__habilidades'>
         <h2>Habilidades</h2>
         <p>Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
           tecnologias con las que he trabajado.
@@ -26,7 +27,7 @@ const Habilidades = () => {
           <li>Express-validator</li>
           <li>Morgan</li>
         </ul>
-        
+        </div>
         {
             habilidades?.map(habilidad => (
                 <div key={habilidad.id}>
