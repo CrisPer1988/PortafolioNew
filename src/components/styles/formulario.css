@@ -5,7 +5,7 @@
     padding-top: 50px;
     align-items: center;
     color: rgb(255, 255, 255);
-    background-image: url("./images/contacto.png.webp");
+    background-image: url("/src/assets/contacto.png.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
