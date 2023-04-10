@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import habilidades from "../utils/habilidades"
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import "./styles/habilidades.css"
+import "aos/dist/aos.css"
+import Aos from "aos"
 
 const Habilidades = () => {
+
+    useEffect(() => {
+    Aos.init()
+   }, [])
+
   return (
     <section id='habilidades' className='container-md contaniner__habilidades'>
         <div className='text__habilidades'>
         <h2>Habilidades</h2>
-        <p>Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
+        <p data-aos="fade-up" duration="8000" >Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
           tecnologias con las que he trabajado.
         </p>
-        <ul className='lista__habilidades'>
+        <ul data-aos="fade-left" duration="6000"  className='lista__habilidades'>
           <li>HTML</li>
           <li>Css</li>
           <li>JavasCript</li>
@@ -31,7 +38,7 @@ const Habilidades = () => {
         {
             habilidades?.map(habilidad => (
                 <div key={habilidad.id}>
-                  <div>
+                  <div data-aos="fade-up" duration="5000" >
                     <h2>{habilidad.name}</h2>
                     <ProgressBar animated variant="warning" striped now={habilidad.pocentaje} />                 
                   </div>
@@ -47,7 +54,7 @@ const Habilidades = () => {
         
         {
           habilidades.map(habilImg => (
-            <div className='content__img-habilidad' key={habilImg.id}>
+            <div data-aos="fade-up" duration="6000" className='content__img-habilidad' key={habilImg.id}>
                 
                     <img className='img__habilidades' src={habilImg.img} alt="" />
                     </div>

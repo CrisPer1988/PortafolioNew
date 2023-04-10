@@ -1,10 +1,16 @@
 import "./styles/home.css"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Home = () => {
+
+  useEffect(() => {
+   Aos.init()
+  }, [])
+  
 
   const [showAmigo, setAmigoShow] = useState(false);
 
@@ -22,7 +28,7 @@ const Home = () => {
   return (
     <section id='home' className='container-md content__home'>
         <div className='body__home'>
-            <h2 className='title__home'>Hola, Soy <span>Cristian! </span>
+            <h2 data-aos="fade-down" duration="6000" className='title__home'>Hola, Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>
             <img className="img__home" src="./images/home-image.png" alt="" />
 

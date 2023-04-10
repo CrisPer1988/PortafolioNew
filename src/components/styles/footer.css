@@ -14,28 +14,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #373b3e;
+    color: white;
     border-radius: 50%; 
     width: 60px;
-    height: 60px;
+    height: 30px;
     box-shadow: 5px 2px 2px rgb(34, 34, 33);  
+    
+}
+
+
+
+.item__icons a {
+    color: rgb(247, 144, 18);
     transition: transform 0.5s;
 }
 
-.item__icons:hover {
-    transform: scale(1.2);
-}
-
-.item__icons a {
-    color: rgb(14, 24, 139);
-}
-
 .item__icons a:hover {
-    color: rgb(11, 100, 30);
+    color: rgb(99, 202, 81);
+    transform: scale(1.5);
 }
 
 .createBy {
-    color: white;
-    margin-top: 30px;
+    color: #5d6061;
+    padding-top: 50px ;
     text-align: center;
 }
