@@ -23,7 +23,7 @@ const Proyectos = () => {
                 <Carousel.Item key={image.id}>
                 
                 <img 
-                  className="d-block w-75 img__proyectos"
+                  className="d-block w-100 img__proyectos"
                   src={image.img}
                   alt="First slide"
                 />

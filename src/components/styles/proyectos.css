@@ -6,7 +6,8 @@
 }
 
 .img__proyectos {
-    margin: 0 auto;  
+    margin: 0 auto; 
+    border-radius: 10px; 
 }
 
 
@@ -22,8 +23,9 @@ color: rgba(255, 255, 255, 0);
 position: absolute;
 top: 0;
 text-align: center;
-transform: translateX(-150px);
-transition: transform 0.8s;
+/* transform: translateX(-150px); */
+transform: scale(0.5);
+transition: transform 1s;
 padding: 0 70px;
 }
 
@@ -32,7 +34,8 @@ padding: 0 70px;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.741);
     border-radius: 10px;
-    transform: translateX(0);
+    transform: scale(1);
+    /* transform: translateX(0); */
 }
 
 .text__proyectos {
