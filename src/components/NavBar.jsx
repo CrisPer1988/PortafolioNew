@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./styles/navbar.css"
-import Spinner from 'react-bootstrap/Spinner';
+
 
 const NavBar = () => {
   return (
@@ -13,7 +13,6 @@ const NavBar = () => {
       <Container>
       
         <Navbar.Brand className='nombre' href="#home"> Cristian-Perez </Navbar.Brand>
-       <Spinner animation="border" size='sm' />
         
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
