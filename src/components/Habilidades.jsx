@@ -15,7 +15,7 @@ const Habilidades = () => {
     <section id='habilidades' className='container-md contaniner__habilidades'>
         <div className='text__habilidades'>
         <h2>Habilidades</h2>
-        <p data-aos="fade-up" duration="8000" >Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
+        <p data-aos="fade-up" duration="6000" >Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
           tecnologias con las que he trabajado.
         </p>
         <ul data-aos="fade-left" duration="6000"  className='lista__habilidades'>
@@ -38,7 +38,7 @@ const Habilidades = () => {
         {
             habilidades?.map(habilidad => (
                 <div key={habilidad.id}>
-                  <div data-aos="fade-up" duration="5000" >
+                  <div data-aos="fade-up" duration="6000" >
                     <h2>{habilidad.name}</h2>
                     <ProgressBar animated variant="warning" striped now={habilidad.pocentaje} />                 
                   </div>
