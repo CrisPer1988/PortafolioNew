@@ -1,7 +1,7 @@
 .contaniner__habilidades {
     
     background-color: white;
-    padding: 10px;
+    padding: 50px 10px 10px 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
