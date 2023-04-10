@@ -15,13 +15,11 @@
 .lista__habilidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 1.2rem;
-    
-    
+    font-size: 1.2rem;  
 }
 
 .img__habilidades {
-    max-width: 120px;
+    width: 100px;
     transition: transform 0.5s;
 }
 
@@ -64,15 +62,6 @@ li {
         padding: 10px;
        
     }
-
-    .content__img-habilidad {
-        max-width: 180px;
-        aspect-ratio: 1.2;
-    }
-
-    .img__habilidades {
-        width: 110px;
-    }
     
 }
 
@@ -83,18 +72,20 @@ li {
     }
 
     .content__img-habilidad {
-        max-width: 100px;
-        aspect-ratio: 1.2;
+        width: 120px;
         margin: 15px auto;
     }
 
     .img__habilidades {
-        width: 50px;
-
+        width: 90px;
     }
 
+  
+
     .habilidad__grid {
+        
         gap: 0;
+        grid-template-columns: 1fr 1fr;
     }
     
 }
@@ -114,5 +105,10 @@ li {
         padding: 5px;
         border-radius: 10px;
     }
+
+    .img__habilidades {
+        width: 80px;
+    }
+
     
 }

@@ -30,17 +30,24 @@ const Proyectos = () => {
                 <Carousel.Item key={image.id}>
                 
                 <img
-                  className="d-block w-100 img__proyectos"
+                  className="d-block w-75 img__proyectos"
                   src={image.img}
                   alt="First slide"
                 />
                 <div className='content__info-proyectos'>    
                 <h3 className='title__descripcion'>{image.descripcion}</h3>
                 <Nav.Link href={image.link} target="_blank">{image.link}</Nav.Link>                     
-                  </div>     
+              
+                  </div>
               </Carousel.Item>
-      
+                
+
+
+
+
             ))
+
+            
         }
      
     </Carousel>
