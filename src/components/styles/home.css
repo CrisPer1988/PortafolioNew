@@ -1,13 +1,26 @@
 .content__home {
     width: 100%;
     min-height: 100vh;
-    padding-top: 70px;
-    background-color: rgb(224, 231, 244);
+    padding-top: 5px;
+    background-color: #297c6a;
 
 }
 
+.img__home {
+    max-width: 200px;
+    border-radius: 50%;
+    transition: transform 1s;
+}
+
+.img__home:hover {
+    transform: scale(3);
+    opacity: 0.5;
+
+}
+
+
 .title__home {
-    background-color: rgb(72, 105, 187);
+    background-color: rgb(0, 0, 0);
     
     color: white;
     border-radius: 5px;
@@ -20,7 +33,7 @@
 }
 
 .body__home {
-    margin-top: 8%;
+    margin-top: 5%;
     padding: 15px;
     color: rgb(0, 0, 0);
     display: flex;
@@ -34,6 +47,7 @@
 
 .body__home h3 {
    text-align: center;
+   padding: 0 30px;
 }
 
 .body__home p {
@@ -55,7 +69,7 @@
     justify-content: center;
     gap: 2rem;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 @media (max-width:450px ) {

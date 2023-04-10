@@ -1,8 +1,8 @@
 .content__proyectos {
-    background-color: rgb(184, 243, 196);
+    background-color: rgb(245, 182, 11);
     padding-top: 50px;
     padding-bottom: 100px;
-    
+    color: rgb(52, 50, 50);
 }
 
 .img__proyectos {
@@ -19,7 +19,7 @@ flex-direction: column;
 justify-content: center;
 gap: 1.5rem;
 align-items: center;
-color: rgba(0, 0, 0, 0); 
+color: rgba(255, 255, 255, 0); 
 position: absolute;
 top: 0;
 text-align: center;

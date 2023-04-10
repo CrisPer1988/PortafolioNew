@@ -3,12 +3,11 @@
     flex-direction: column;
     width: 100%;
     padding-top: 50px;
- 
     align-items: center;
-    background-color: rgb(35, 35, 35);
     color: rgb(255, 255, 255);
-   
-
+    background-image: url("./images/contacto.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .item__form {
@@ -17,22 +16,23 @@
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
-
-  
+    
 }
 
 .form__items {
-    width: 50%;
+    width: 70%;
 }
 
 .item__form input {
     width: 100%;
     padding: 5px;
+    box-shadow: 10px 5px 5px rgb(118, 118, 118);
 }
 
 .item__form textarea {
     width: 100%;
     padding: 5px;
+    box-shadow: 10px 5px 5px rgb(118, 118, 118);
 }
 
 .btn__form {

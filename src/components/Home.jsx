@@ -24,6 +24,7 @@ const Home = () => {
         <div className='body__home'>
             <h2 className='title__home'>Hola, Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>
+            <img className="img__home" src="./images/home-image.png" alt="" />
 
             <div>
             
@@ -31,7 +32,7 @@ const Home = () => {
 
           <div className="content__modal">
           
-          <Button variant="primary" onClick={handleShowAmigo}>
+          <Button variant="warning" onClick={handleShowAmigo}>
         Click para conocer una amigo
       </Button>
 
@@ -56,7 +57,7 @@ const Home = () => {
         </Modal.Footer>
       </Modal>
 
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="warning" onClick={handleShow}>
         Click para conocer un profesional
       </Button>
 
