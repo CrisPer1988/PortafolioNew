@@ -3,7 +3,7 @@ import "./styles/footer.css"
 
 const Footer = () => {
   return (
-    <div  id='contacto' className='container-md container__footer'>
+    <div  id='contacto' className='container__footer'>
     <div className='icons__footer'>
             <div className='item__icons'>
             <a href="https://www.linkedin.com/in/cristian-norberto-perez-2b1b52260/" target='_blank'><i className='bx bxl-linkedin'></i></a>

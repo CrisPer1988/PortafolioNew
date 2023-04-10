@@ -26,7 +26,7 @@ const Home = () => {
 
 
   return (
-    <section id='home' className='container-md content__home'>
+    <section id='home' className='content__home'>
         <div className='body__home'>
             <h2 data-aos="fade-down" duration="6000" className='title__home'>Hola, Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>

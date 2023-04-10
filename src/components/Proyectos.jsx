@@ -15,7 +15,7 @@ const Proyectos = () => {
 
 
   return (
-    <div id='proyectos' className='container-md content__proyectos'>
+    <div id='proyectos' className='content__proyectos'>
       <div data-aos="fade-up" duration="6000"  className='text__proyectos'>
       <h2>Proyectos</h2>
       <p>En esta seccion te mostrare algunos de mis proyectos preferidos. Pasa el raton por

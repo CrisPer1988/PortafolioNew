@@ -1,8 +1,9 @@
 .content__proyectos {
-    /* background-color: rgb(245, 148, 11); */
-    background-color: white;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    background-color: rgb(245, 148, 11);
+    /* background-color: white; */
+    padding: 10px;
+    
+
     color: #424649;
 }
 
@@ -46,6 +47,11 @@ padding: 0 70px;
 }
 
 @media (max-width: 550px) {
+    .content__proyectos {
+        padding: 10px;
+    
+    }
+
     .content__info-proyectos {
         font-size: 0.6rem;
         gap: 0;

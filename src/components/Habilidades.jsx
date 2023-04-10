@@ -12,12 +12,13 @@ const Habilidades = () => {
    }, [])
 
   return (
-    <section id='habilidades' className='container-md contaniner__habilidades'>
+    <section id='habilidades' className='contaniner__habilidades'>
         <div className='text__habilidades'>
         <h2>Habilidades</h2>
         <p data-aos="fade-up" duration="6000" >Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
           tecnologias con las que he trabajado.
         </p>
+        </div>
         <ul data-aos="fade-left" duration="6000"  className='lista__habilidades'>
           <li>HTML</li>
           <li>Css</li>
@@ -34,19 +35,17 @@ const Habilidades = () => {
           <li>Express validator</li>
           <li>Morgan</li>
         </ul>
-        </div>
+        
+        
         {
             habilidades?.map(habilidad => (
-                <div key={habilidad.id}>
-                  <div data-aos="fade-up" duration="6000" >
+                <div data-aos="fade-up" duration="6000" className='habilidad__bar' key={habilidad.id}>
                     <h2>{habilidad.name}</h2>
                     <ProgressBar animated variant="warning" striped now={habilidad.pocentaje} />                 
-                  </div>
                 </div>
-            ))
-           
-            
+            ))     
         }
+       
    
             
 

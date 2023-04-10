@@ -12,7 +12,7 @@ const FormularioDeContacto = () => {
     
 
   return (
-    <div className='container-md content__form'>
+    <div className='content__form'>
     <form className='form__items' onSubmit={handleSubmit}>
     <h2>Contactame</h2>
 <div className="item__form">

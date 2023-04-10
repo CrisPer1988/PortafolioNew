@@ -1,13 +1,14 @@
 .content__form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-top: 50px;
+    
+    padding: 10px;
     align-items: center;
     color: rgb(255, 255, 255);
     background-image: url("/src/assets/contacto.png.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
 }
 
 .item__form {
@@ -54,6 +55,10 @@ hr  {
 }
 
 @media (max-width: 400px) {
+    .content__form {
+        padding: 10px;
+    }
+
     .icons__footer {
         gap: 1.5rem;
         font-size: 2rem;
