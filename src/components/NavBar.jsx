@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div>
       <div className='navbar__fixed'>
-          <Navbar  bg="dark" fixed="top" variant="dark" expand="lg">
+          <Navbar  bg="warning" fixed="top" variant="ligth" expand="lg">
       <Container>
       
         <Navbar.Brand className='nombre' href="#home"> Cristian-Perez </Navbar.Brand>

@@ -16,15 +16,15 @@ const Habilidades = () => {
           <li>Css</li>
           <li>JavasCript</li>
           <li>React.js</li>
-          <li>React-router</li>
+          <li>React Router</li>
           <li>Redux</li>
           <li>Bootstrap</li>
           <li>Taildwind</li>
-          <li>React-hook-form</li>
+          <li>React hook form</li>
           <li>Git</li>
           <li>Node.js</li>
           <li>Express</li>
-          <li>Express-validator</li>
+          <li>Express validator</li>
           <li>Morgan</li>
         </ul>
         </div>

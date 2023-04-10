@@ -1,9 +1,9 @@
 .content__home {
     width: 100%;
     min-height: 100vh;
-    padding-top: 5px;
-    background-color: #297c6a;
-
+    padding-top: 10px;
+    display: flex;
+    /* background-color: white; */
 }
 
 .img__home {
@@ -14,35 +14,33 @@
 
 .img__home:hover {
     transform: scale(3);
-    opacity: 0.5;
+    opacity: 0.7;
 
 }
 
 
 .title__home {
-    background-color: rgb(27, 28, 33);
-    
-    color: white;
+    background-color: #424649;
+    width: 100%;
+    color: rgb(255, 255, 255);
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px 50px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .title__home span {
-    color: rgb(250, 153, 55);
+    color: rgb(247, 215, 8);
     font-family: cursive;
 }
 
 .body__home {
-    margin-top: 5%;
-    padding:  15px;
-    color: rgb(0, 0, 0);
+    color: #424649;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    line-height: 1.8rem;
-    letter-spacing: 2px;
+    gap: 1rem;
 }
 
 .body__home h3 {
@@ -50,12 +48,10 @@
    padding: 0 30px;
 }
 
-.body__home p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0 80px;
-
-}
+.body__home h4 {
+    text-align: center;
+    padding: 0 30px;
+ }
 
 .presentacion {
     padding: 15px;
@@ -72,7 +68,15 @@
     padding-top: 10px;
 }
 
+.btn__home {
+    box-shadow: 10px 5px 5px rgb(118, 118, 118);
+}
+
 @media (max-width:450px ) {
+    .content__home {
+        padding-top: 20px;
+    }
+
     .content__modal {
         flex-direction: column;
     }
@@ -83,8 +87,9 @@
 
     .body__home {
         gap: 0.5rem;
-        line-height: 0.5rem;
+        line-height: 0.2rem;
         letter-spacing: 0px;
+
     }
 
     .img__home:hover {

@@ -1,11 +1,11 @@
 .container__footer {
-    background-color: rgb(35, 35, 35);
+    background-color: #1d1d1d;
     padding: 20px 0;
 }
 
 .icons__footer {
     display: flex ;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 3rem;
 }
 
