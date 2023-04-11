@@ -18,6 +18,10 @@
     font-size: 1.2rem;  
 }
 
+.lista__habilidades li {
+    margin: 0 auto;
+}
+
 .img__habilidades {
     width: 100px;
     transition: transform 0.5s;

@@ -34,6 +34,7 @@ const Habilidades = () => {
           <li>Express</li>
           <li>Express validator</li>
           <li>Morgan</li>
+          <li>PostgreSQL</li>
         </ul>
         
         

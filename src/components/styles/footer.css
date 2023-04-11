@@ -41,3 +41,17 @@
     padding-top: 50px ;
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .icons__footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        
+    }
+
+    .item__icons {
+        margin: 0 auto;
+    }
+    
+}

@@ -6,6 +6,7 @@ import Proyectos from './components/Proyectos'
 import Habilidades from './components/Habilidades'
 import FormularioDeContacto from './components/FormularioDeContacto'
 import Footer from './components/Footer'
+import SeccionImg from './components/SeccionImg'
 
 
 function App() {
@@ -15,12 +16,12 @@ function App() {
      <NavBar />
      
      <Home />
-
-    
     <Proyectos />
+    <SeccionImg />
     <Habilidades />
     <FormularioDeContacto />
     <Footer />
+
     </div>
   )
 }

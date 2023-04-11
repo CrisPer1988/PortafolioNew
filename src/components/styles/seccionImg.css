@@ -1,0 +1,42 @@
+.content__masProyectos {
+    background-color: rgb(245, 148, 11);
+    padding: 20px 0;
+}
+
+.depth-container {
+    
+    display: flex;
+    max-width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+
+.depth-container div {
+    margin: 0 auto
+
+}
+
+.depth-container img {
+    width: 0px;
+
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
+.depth-container img:hover {
+    cursor: crosshair;
+    width: 450px;
+    opacity: 1;
+    filter: contrast(150%);
+}
+
+@media (max-width: 830px) {
+    .content__masProyectos {
+        display: none;
+    }
+    
+}
+
