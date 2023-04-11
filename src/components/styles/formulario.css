@@ -8,7 +8,7 @@
     background-image: url("/src/assets/contacto.png.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
+    
 }
 
 .item__form {
@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
+    
     
 }
 
@@ -28,6 +29,7 @@
     width: 100%;
     padding: 5px;
     box-shadow: 10px 5px 5px rgb(118, 118, 118);
+    
 }
 
 .item__form textarea {

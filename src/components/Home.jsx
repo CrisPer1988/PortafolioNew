@@ -40,7 +40,7 @@ const Home = () => {
           <div className="content__modal">
           
           <Button className="btn__home" variant="dark" expand="lg" onClick={handleShowAmigo}>
-        Click para conocer una amigo
+        Click para conocer un amigo
       </Button>
 
       <Modal size="lg" show={showAmigo} onHide={handleCloseAmigo}>
