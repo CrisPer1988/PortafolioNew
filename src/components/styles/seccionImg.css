@@ -7,15 +7,11 @@
     
     display: flex;
     max-width: 90%;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
     
 }
 
-.depth-container div {
-    margin: 0 auto
-
-}
 
 .depth-container img {
     width: 0px;
