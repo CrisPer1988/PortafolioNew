@@ -7,6 +7,7 @@ import Habilidades from './components/Habilidades'
 import FormularioDeContacto from './components/FormularioDeContacto'
 import Footer from './components/Footer'
 import SeccionImg from './components/SeccionImg'
+import CaruselPrueba from './components/CaruselPrueba'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <Habilidades />
     <FormularioDeContacto />
     <Footer />
+    <CaruselPrueba />
 
     </div>
   )

@@ -5,9 +5,10 @@
     padding: 50px 10px 10px 10px;
     align-items: center;
     color: rgb(255, 255, 255);
-    background-image: url("/src/assets/contacto.png.webp");
+    /* background-image: url("/src/assets/contacto.png.webp");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background-color: rgb(35, 35, 35);
     
 }
 
@@ -16,9 +17,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.3rem;
-    
-    
 }
 
 .form__items {
@@ -39,7 +37,7 @@
 }
 
 .btn__form {
-    margin: 8px 0;
+    margin: 20px 0;
     width: 50%;
     border: none;
     border-radius: 10px;

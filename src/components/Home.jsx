@@ -17,7 +17,8 @@ const Home = () => {
   const handleCloseAmigo = () => setAmigoShow(false);
   const handleShowAmigo = () => setAmigoShow(true);
 
-  console.log(showAmigo);
+
+  
 
   const [show, setShow] = useState(false);
 
@@ -25,14 +26,18 @@ const Home = () => {
   const handleShow = () => setShow(true);
 
 
+
   return (
     <section id='home' className='content__home'>
-        <div className='body__home'>
-            <h2 data-aos="fade-down" duration="6000" className='title__home'>Hola, Soy <span>Cristian! </span>
+     
+          <div className='body__home'>
+            <h2 data-aos="fade-down" duration="6000" className='title__home'>Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>
-            <img className="img__home" src="./images/home-image.png" alt="" />
+            <img className="img__home" src="./images/home-image-removebg-preview.png" alt="" />
 
           <div>
+
+          
             
           <h3>Bienvenido:</h3>
           <h4>Voy a presentarme como amigo y como profesional, asi podras conocerme a fondo</h4> 
@@ -40,7 +45,7 @@ const Home = () => {
           <div className="content__modal">
           
           <Button className="btn__home" variant="dark" expand="lg" onClick={handleShowAmigo}>
-        Click para conocer un amigo
+        Conoce un amigo
       </Button>
 
       <Modal size="lg" show={showAmigo} onHide={handleCloseAmigo}>
@@ -65,7 +70,7 @@ const Home = () => {
       </Modal>
 
       <Button className="btn__home" variant="dark" expand="lg" onClick={handleShow}>
-        Click para conocer un profesional
+        Conoce un profesional
       </Button>
 
       <Modal size="lg" show={show} onHide={handleClose}>
@@ -94,14 +99,16 @@ const Home = () => {
       </Modal>
       </div>
          
-          </div>
-
-           
-          
-
-           
+          </div>  
    
         </div>  
+
+         
+
+
+
+       
+      
     </section>
   )
 }

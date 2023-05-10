@@ -33,7 +33,7 @@ const FormularioDeContacto = () => {
       </div>
     <div className="item__form">
       <label htmlFor="email">
-        Email Address
+        Email
       </label>
       <input
       placeholder='Escribe tu email'
