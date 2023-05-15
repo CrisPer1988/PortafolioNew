@@ -4,11 +4,51 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Aos from "aos"
 import "aos/dist/aos.css"
+import {gsap} from "gsap"
 
 const Home = () => {
 
   useEffect(() => {
    Aos.init()
+  }, [])
+  
+  useEffect(() => {
+
+   
+    
+     const tl = gsap.timeline()
+  
+      tl.to(".content__home", {opacity: 1})
+      // tl.to(".img_home-animation", {x: -3000, duration:0.5});
+      // tl.to(".img_home-animation", {x: 1000, duration:1});
+       tl.to(".img_home-animation", {background: "blue", borderRadius:10 ,duration:0.5});
+       tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
+       tl.to(".img_home-animation", {background: "black",borderRadius:50 , duration:0.5});
+       tl.to(".img_home-animation", {background: "green",borderRadius:0 , duration:0.5});
+       tl.to(".img_home-animation", {background: "violet",borderRadius:50 , duration:0.5});
+       tl.to(".img_home-animation", {background: "blue",borderRadius:10 , duration:0.5});
+       tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
+       tl.to(".img_home-animation", {background: "black",borderRadius:0 , duration:0.5});
+       tl.to(".img_home-animation", {background: "white",borderRadius:20 , duration:0.5});
+      tl.to(".btn1_animation", {translateX: 50,duration: 0.3, ease: "bounce"});
+      tl.to(".img_home-animation", {x: 0, duration: 0.2});
+      tl.to(".btn1_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
+
+      tl.to(".btn2_animation", {translateX: -50,duration: 0.3, ease: "bounce"});
+      tl.to(".btn2_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
+      
+      // tl.to(".img_home-animation", {yPercent: 0});
+      
+
+      
+       tl.to(".prueba", {scale: 2, duration: 0.5});
+       tl.to(".prueba", {scale: 1, duration: 0.5, ease: "bounce"});
+      // tl.to(".btn2_animation", {yPercent: -100, duration:1});
+      // tl.to(".btn1_animation", {yPercent: 0, duration:1.5});
+    // to(".prueba_gsap", {scale: 0, duration: 0})
+    // to(".prueba_gsap", {scale: 1, duration: 2})
+    // tl.to(".prueba_gsap2", {rotation: 360, duration: 1})
+   
   }, [])
   
 
@@ -30,10 +70,10 @@ const Home = () => {
   return (
     <section id='home' className='content__home'>
      
-          <div className='body__home'>
+          <div className='body__home prueba'>
             <h2 data-aos="fade-down" duration="6000" className='title__home'>Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>
-            <img className="img__home" src="./images/home-image-removebg-preview.png" alt="" />
+            <img className="img__home img_home-animation" src="./images/home-image-removebg-preview.png" alt="" />
 
           <div>
 
@@ -44,7 +84,7 @@ const Home = () => {
 
           <div className="content__modal">
           
-          <Button className="btn__home" variant="dark" expand="lg" onClick={handleShowAmigo}>
+          <Button className="btn__home btn1_animation btn_animation" variant="dark" expand="lg" onClick={handleShowAmigo}>
         Conoce un amigo
       </Button>
 
@@ -69,7 +109,7 @@ const Home = () => {
         </Modal.Footer>
       </Modal>
 
-      <Button className="btn__home" variant="dark" expand="lg" onClick={handleShow}>
+      <Button className="btn__home btn2_animation btn_animation" variant="dark" expand="lg" onClick={handleShow}>
         Conoce un profesional
       </Button>
 

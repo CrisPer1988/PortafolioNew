@@ -6,21 +6,11 @@
     align-items: center; 
 }
 
-.input__entrada {
-    margin: 0 auto;
-}
-
 .img__home {
     max-width: 200px;
-    border-radius: 50%;
-    transition: transform 1s;
 }
 
-.img__home:hover {
-    transform: scale(1.5);
-    opacity: 0.7;
 
-}
 
 
 .title__home {
@@ -74,8 +64,7 @@
 
 .btn__home {
     box-shadow: 10px 5px 5px rgb(118, 118, 118);
-    width: 40%;
-    
+    width: 40%; 
 }
 
 @media (max-width:650px ) {
@@ -99,9 +88,6 @@
 
     }
 
-    .img__home:hover {
-        transform: scale(1.5);
-    }
 
     .btn__home {
         width: 80%;
