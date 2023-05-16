@@ -21,34 +21,31 @@ const Home = () => {
       tl.to(".content__home", {opacity: 1})
       // tl.to(".img_home-animation", {x: -3000, duration:0.5});
       // tl.to(".img_home-animation", {x: 1000, duration:1});
-       tl.to(".img_home-animation", {background: "blue", borderRadius:10 ,duration:0.5});
-       tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
-       tl.to(".img_home-animation", {background: "black",borderRadius:50 , duration:0.5});
-       tl.to(".img_home-animation", {background: "green",borderRadius:0 , duration:0.5});
-       tl.to(".img_home-animation", {background: "violet",borderRadius:50 , duration:0.5});
-       tl.to(".img_home-animation", {background: "blue",borderRadius:10 , duration:0.5});
-       tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
-       tl.to(".img_home-animation", {background: "black",borderRadius:0 , duration:0.5});
-       tl.to(".img_home-animation", {background: "white",borderRadius:20 , duration:0.5});
-      tl.to(".btn1_animation", {translateX: 50,duration: 0.3, ease: "bounce"});
-      tl.to(".img_home-animation", {x: 0, duration: 0.2});
-      tl.to(".btn1_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
+      //  tl.to(".img_home-animation", {background: "blue", borderRadius:10 ,duration:0.5});
+      //  tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "black",borderRadius:50 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "green",borderRadius:0 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "violet",borderRadius:50 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "blue",borderRadius:10 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "black",borderRadius:0 , duration:0.5});
+      //  tl.to(".img_home-animation", {background: "white",borderRadius:20 , duration:0.5});
+      // tl.to(".btn1_animation", {translateX: 50,duration: 0.3, ease: "bounce"});
+      // tl.to(".img_home-animation", {x: 0, duration: 0.2});
+      // tl.to(".btn1_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
 
-      tl.to(".btn2_animation", {translateX: -50,duration: 0.3, ease: "bounce"});
-      tl.to(".btn2_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
-      
-      // tl.to(".img_home-animation", {yPercent: 0});
-      
-
+      // tl.to(".btn2_animation", {translateX: -50,duration: 0.3, ease: "bounce"});
+      // tl.to(".btn2_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
       
        tl.to(".prueba", {scale: 2, duration: 0.5});
-       tl.to(".prueba", {scale: 1, duration: 0.5, ease: "bounce"});
-      // tl.to(".btn2_animation", {yPercent: -100, duration:1});
-      // tl.to(".btn1_animation", {yPercent: 0, duration:1.5});
-    // to(".prueba_gsap", {scale: 0, duration: 0})
-    // to(".prueba_gsap", {scale: 1, duration: 2})
-    // tl.to(".prueba_gsap2", {rotation: 360, duration: 1})
-   
+       tl.to(".prueba", {scale: 1, duration: 0.8, ease: "bounce"});
+
+       tl.to(".prueba", {scale: 2, duration: 0.5});
+       tl.to(".prueba", {scale: 1, duration: 0.3, ease: "bounce"});
+
+       tl.to(".prueba", {scale: 4, duration: 0.8});
+       tl.to(".prueba", {scale: 1, duration: 0.3, ease: "bounce"});
+ 
   }, [])
   
 

@@ -40,11 +40,14 @@
 .body__home h3 {
    text-align: center;
    padding: 0 30px;
+   color: black;
 }
 
 .body__home h4 {
     text-align: center;
     padding: 0 30px;
+   color: black;
+
  }
 
 .presentacion {
