@@ -7,7 +7,7 @@ const FormularioDeContacto = () => {
     
     const [state, handleSubmit] = useForm("xnqyongg");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return confirm("Gracias por contactarme!!! A la brevedad te respondere") 
     }
 
     
