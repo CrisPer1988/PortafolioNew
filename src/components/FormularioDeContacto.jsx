@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 import "./styles/formulario.css"
+import "aos/dist/aos.css"
 
 const FormularioDeContacto = () => {
     
@@ -13,7 +14,7 @@ const FormularioDeContacto = () => {
 
   return (
     <div className='content__form'>
-    <form className='form__items' onSubmit={handleSubmit}>
+    <form data-aos="fade-down" duration="10000" className='form__items' onSubmit={handleSubmit}>
     <h2>Contactame</h2>
 <div className="item__form">
 <label htmlFor="name">

@@ -68,7 +68,7 @@ const Home = () => {
     <section id='home' className='content__home'>
      
           <div className='body__home prueba'>
-            <h2 data-aos="fade-down" duration="6000" className='title__home'>Soy <span>Cristian! </span>
+            <h2 className='title__home'>Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>
             <img className="img__home img_home-animation" src="./images/home-image-removebg-preview.png" alt="" />
 
