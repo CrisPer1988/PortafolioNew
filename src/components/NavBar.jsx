@@ -23,7 +23,7 @@ const NavBar = () => {
             <Nav.Link href="#proyectos">Proyectos</Nav.Link>
             <Nav.Link href="#habilidades">Habilidades</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
-            <Nav.Link href="/images/mi-curriculum.pdf" target='_blank'>CV <i className='bx bx-download'></i></Nav.Link>
+            <Nav.Link href="/images/CV-actualizado.pdf" target='_blank'>CV <i className='bx bx-download'></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
