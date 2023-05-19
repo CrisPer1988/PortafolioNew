@@ -19,23 +19,6 @@ const Home = () => {
      const tl = gsap.timeline()
   
       tl.to(".content__home", {opacity: 1})
-      // tl.to(".img_home-animation", {x: -3000, duration:0.5});
-      // tl.to(".img_home-animation", {x: 1000, duration:1});
-      //  tl.to(".img_home-animation", {background: "blue", borderRadius:10 ,duration:0.5});
-      //  tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "black",borderRadius:50 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "green",borderRadius:0 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "violet",borderRadius:50 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "blue",borderRadius:10 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "red",borderRadius:100 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "black",borderRadius:0 , duration:0.5});
-      //  tl.to(".img_home-animation", {background: "white",borderRadius:20 , duration:0.5});
-      // tl.to(".btn1_animation", {translateX: 50,duration: 0.3, ease: "bounce"});
-      // tl.to(".img_home-animation", {x: 0, duration: 0.2});
-      // tl.to(".btn1_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
-
-      // tl.to(".btn2_animation", {translateX: -50,duration: 0.3, ease: "bounce"});
-      // tl.to(".btn2_animation", {translateX: 0, duration: 0.3, ease: "bounce"});
       
        tl.to(".prueba", {scale: 2, duration: 0.5});
        tl.to(".prueba", {scale: 1, duration: 0.8, ease: "bounce"});
@@ -65,12 +48,12 @@ const Home = () => {
 
 
   return (
-    <section id='home' className='content__home'>
+    <section id='home' className="content__home">
      
           <div className='body__home prueba'>
             <h2 className='title__home'>Soy <span>Cristian! </span>
             desarrollador Full Stack</h2>
-            <img className="img__home img_home-animation" src="./images/home-image-removebg-preview.png" alt="" />
+            <img className="img__home img_home-animation" src="./images/Foto-home.png" alt="" />
 
           <div>
 
@@ -81,7 +64,7 @@ const Home = () => {
 
           <div className="content__modal">
           
-          <Button className="btn__home btn1_animation btn_animation" variant="dark" expand="lg" onClick={handleShowAmigo}>
+          <Button className="btn__home btn1_animation btn_animation"  variant="dark" expand="lg" onClick={handleShowAmigo}>
         Conoce un amigo
       </Button>
 

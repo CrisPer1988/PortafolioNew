@@ -4,4 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --navbar: rgb(255, 213, 0);
+    --home: rgb(255, 255, 255);
+    --text-color-black: rgb(64, 64, 64);
+    --black: rgb(67, 67, 67);
+    --light-black: rgb(151, 151, 151);
+    --white: white;
+    --light-white: rgb(229, 229, 229);
+}
+
+.dark_mode {
+    --navbar: rgb(33, 7, 183);
+    --home: rgb(100, 100, 100);
+    --text-color-black: rgb(239, 239, 239);
+    --black: rgb(67, 67, 67);
+    --light-black: rgb(151, 151, 151);
+    --white: white;
+    --light-white: rgb(229, 229, 229);
+}
 

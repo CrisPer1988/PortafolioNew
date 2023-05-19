@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
@@ -13,10 +13,13 @@ import CaruselPrueba from './components/CaruselPrueba'
 function App() {
 
   return (
+
     <div className="App">
-     <NavBar />
+     <NavBar 
+ 
+     />
      
-     <Home />
+     <Home/>
     <Proyectos />
     <SeccionImg />
     <Habilidades />

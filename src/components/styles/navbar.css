@@ -1,3 +1,11 @@
 .navbar__fixed {
     width: 100vw;
+
+    
+    
+}
+
+.navv {
+    background-color: var(--navbar);
+
 }

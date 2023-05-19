@@ -1,13 +1,26 @@
 .content__home {
     min-height: 100vh;
-    padding-top: 10px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center; 
+    background-color: var(--home);
+    
 }
 
 .img__home {
-    max-width: 200px;
+    max-width: 130px;
+    
+    background-color: rgb(247, 215, 8);
+    border-radius: 0px 100px 0px 100px;
+    transition: transform 0.5s;
+    padding-top: 10px;
+    
+}
+
+.img__home:hover {
+    transform: scale(1.5);
+    background-color: transparent;
 }
 
 
@@ -40,13 +53,14 @@
 .body__home h3 {
    text-align: center;
    padding: 0 30px;
-   color: black;
+   color: var(--text-color-black);
+   
 }
 
 .body__home h4 {
     text-align: center;
     padding: 0 30px;
-   color: black;
+    color: var(--text-color-black);
 
  }
 
@@ -68,6 +82,8 @@
 .btn__home {
     box-shadow: 10px 5px 5px rgb(118, 118, 118);
     width: 40%; 
+    background: red;
+
 }
 
 @media (max-width:650px ) {
