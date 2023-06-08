@@ -1,15 +1,17 @@
 .content__proyectos {
     background-color: rgb(245, 148, 11);
     /* background-color: white; */
-    padding: 50px 10px 10px 10px;
+    padding: 50px 30px 10px 30px;
     color: #424649;
 }
 
 .img__proyectos {
     display: flex;
     margin: 0 auto;
-    border-radius: 10px; 
-    
+    padding: 3px;
+    border-radius: 15px;
+    object-fit: cover;
+    aspect-ratio: 1.2/1;
 }
 
 .content__info-proyectos {
@@ -41,10 +43,28 @@ padding: 0 70px;
 
 .text__proyectos {
     padding: 0 20px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 60px;
 }
 
+.bootstrap {
+    display: none;
+}
+
+.owl{
+    display: block;
+}
+
+
+@media (max-width: 850px) {
+    .bootstrap {
+        display: block;
+    }
+
+    .owl {
+        display: none;
+    }
+}
 
 
 @media (max-width: 550px) {

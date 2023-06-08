@@ -33,7 +33,7 @@ const imgData = [
         img: "/images/poke-api.png",
         id: 6,
         link: "https://poke-api-los-jinetes.netlify.app/",
-        descripcion: "Revista Pokemon. Despliega todos los pokemones. Opcion de ver las caracteristicas individuales."
+        descripcion: "Revista Pokemon. Opcion de ver las caracteristicas individuales."
     },
 ]
 

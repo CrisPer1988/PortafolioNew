@@ -8,6 +8,7 @@ import FormularioDeContacto from './components/FormularioDeContacto'
 import Footer from './components/Footer'
 import SeccionImg from './components/SeccionImg'
 import CaruselPrueba from './components/CaruselPrueba'
+import AcercaDeMi from './components/AcercaDeMi'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
      />
      
      <Home/>
+     <AcercaDeMi />
     <Proyectos />
     <SeccionImg />
     <Habilidades />

@@ -24,3 +24,8 @@
     --light-white: rgb(229, 229, 229);
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+

@@ -1,0 +1,69 @@
+.content__home {
+    
+    padding-top: 80px;
+    margin-bottom: 30px ;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.5rem;
+    background-color: rgb(245, 148, 11);
+    border: 5px solid rgb(195, 195, 195);
+    border-radius: 20px;
+    color: rgb(53, 53, 53);
+    
+}
+
+.content__home img {
+    margin: 0 auto;
+}
+
+.acercaDeMi__text {
+    display: flex;
+    flex-direction: column;
+    
+    align-items:center;
+    gap: 1rem;
+}
+
+.title__hablandas {
+    font-size: 1.3rem;
+    font-family: cursive;
+    text-decoration:underline;
+}
+
+.description__ol {
+    font-size: 1.1rem;
+    
+    
+}
+
+.img__acerca {
+   max-width: 280px; 
+}
+
+@media (max-width: 780px) {
+    .content__home {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .title__hablandas {
+        text-align: center;
+    }
+
+    .description__ol {
+        text-align: center;
+        padding: 0;
+    }
+
+    .img__acerca {
+        max-width: 180px;
+    }
+    
+}
+
+
+ 
+
+
+
+
