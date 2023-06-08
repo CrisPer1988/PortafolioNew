@@ -44,6 +44,8 @@ const Proyectos = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+        </div>
+        <div className="content__proyectos owl">
         <div data-aos="fade-up" duration="6000" className="text__proyectos">
           <h2>Proyectos</h2>
           <p>
@@ -53,8 +55,6 @@ const Proyectos = () => {
             disfrute al realizarlos.{" "}
           </p>
           </div>
-        </div>
-        <div className="content__proyectos owl">
         <OwlCarousel
           className="owl-theme"
           loop
