@@ -9,13 +9,13 @@ const habilidades = [
         img: "/images/CSS3_logo.svg.png",
         id: 2,
         name: "Css",
-        pocentaje: 85
+        pocentaje: 90
     },
     {
         img: "/images/js-logo.png",
         id: 3,
         name: "Javascript",
-        pocentaje: 70
+        pocentaje: 75
     },
     {
         img: "/images/logo-react.png",
@@ -27,7 +27,7 @@ const habilidades = [
         img: "/images/nodejs.png",
         id: 5,
         name: "Node.js",
-        pocentaje: 70
+        pocentaje: 88
     },
     {
         img: "/images/redux-logo.png",
