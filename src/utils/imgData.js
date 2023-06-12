@@ -18,10 +18,10 @@ const imgData = [
         descripcion: "App para crear, editar y eliminar usuarios."
     },
     {
-        img: "/images/rick-morty.png",
+        img: "/images/blog.png",
         id: 4,
-        link: "https://team-los-4-jinetes.netlify.app",
-        descripcion: "Revista Rick and Morty, con dark-mode y paginacion."
+        link: "https://incandescent-mooncake-730a3a.netlify.app/",
+        descripcion: "Blog. Implementacion de Socket."
     },
     {
         img: "/images/ecommerce-javascript.png",

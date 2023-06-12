@@ -11,7 +11,7 @@ const SeccionImg = () => {
       <img src="/images/ecommerce-react2.png" alt="" />
 
       <img src="/images/poke-api2.png" alt="" />
-      <img src="/images/rick-morty2.png" alt="" />
+      <img src="/images/blog-img.png" alt="" />
     
       <img src="/images/user-form2.png" alt="" />
     </div>

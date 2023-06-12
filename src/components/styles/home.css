@@ -16,7 +16,7 @@
     align-items: center;
     text-align: center; 
     color: rgb(255, 255, 255);
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 .content__text-home img {

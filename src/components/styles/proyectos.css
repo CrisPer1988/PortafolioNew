@@ -35,7 +35,8 @@ padding: 0 70px;
 }
 
 .content__info-proyectos:hover {
-   
+    font-family: monospace;
+    font-size: 10px;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.741);
     border-radius: 10px;
