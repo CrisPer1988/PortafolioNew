@@ -11,9 +11,8 @@ const Home = () => {
       <h1>Hola, soy Cristian</h1>
       <h4>DESARROLLADOR FULL STACK</h4>
       <h5>Bienvenid@</h5>
-      <img src="images/home-image-removebg-preview.png" alt="" />
-      <div className="animation__home"></div>
     </div>
+    <div className="animation__home"><img src="images/home-image-removebg-preview.png" alt="" /></div>
   </header>
   )
 }

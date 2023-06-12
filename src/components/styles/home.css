@@ -3,40 +3,27 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
-  
-    
-    
+    background-color: rgb(26, 26, 26);
+
 }
 
 .content__text-home {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center; 
-    color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
     font-family: cursive;
-    
 }
 
 .content__text-home img {
     width: 100%;
     max-width: 300px;
+    margin: auto;
     z-index: 1000;
-    animation: translate 2s infinite;
-    
-}
-
-@keyframes translate {
-    0%{transform: scale(1);}
-    50%{
-        transform: scale(1.06);
-        color: black;
-
-    }
-    100%{transform: scale(1);}
     
 }
 
@@ -44,56 +31,16 @@
     z-index: 10;
     font-size: 3rem;
     
-    
 }
-
-.animation__home {
-    position: absolute;
-    background-color: rgba(239, 192, 7, 0.977);
-    
-    width: 40vw;
-    aspect-ratio: 1;
-    
-    animation: animation-home 3s infinite;
-}
-
-@keyframes animation-home {
-    0% {
-        /* transform: scale(1); */
-        border-radius: none;
-    }
-    50% {
-         transform: rotate(90deg); 
-         background-color: rgb(245, 148, 11);;
-         aspect-ratio: 1;
-        border-radius: 50%;
-        
-    }
-    100% {
-        /* transform: scale(1); */
-        transform: rotate(180deg); 
-        
-        border-radius: none;
-
-    }; 
-}
-
 
 @media (max-width: 800px) {
-    .animation__home {  
-        width: 60vw;
-        aspect-ratio: 1;
-        top: 50px;
+    .container__home {
+        flex-direction: column;
     }
     
 }
 
 @media (max-width: 450px) {
-    .animation__home {  
-        width: 70vw;
-        aspect-ratio: 1;
-    }
-
     .content__text-home {
         padding: 0 8px;
     }

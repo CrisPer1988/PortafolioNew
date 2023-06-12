@@ -5,6 +5,8 @@
     justify-content: center;
     flex-direction: column;
     color: #424649;
+    border-radius: 15px;
+    margin-top: 30px;
 }
 
 .text__habilidades{
@@ -32,11 +34,11 @@
 
 .content__img-habilidad {
     max-width: 300px;
+    min-width: 50px;
     aspect-ratio: 1.5;
     display: flex;
     justify-content: center ;
     align-items: center;
-    margin: 30px auto;
     border-radius: 50%;
     background-color: rgb(35, 35, 35);
 
@@ -46,8 +48,11 @@
 .habilidad__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.5rem;
+    margin: 0 auto;
+    gap: 4rem;
     margin-top: 20px;
+    
+    
 
 }
 
@@ -87,7 +92,7 @@ li {
 
     .habilidad__grid {
         
-        gap: 0;
+        gap: 1rem;
         grid-template-columns: 1fr 1fr;
     }
     
@@ -101,6 +106,8 @@ li {
        
         gap: 0.2rem;
     }
+
+    
 
     .lista__habilidades li {
         font-size: 1rem;

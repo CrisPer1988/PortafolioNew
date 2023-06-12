@@ -4,7 +4,7 @@ import "./styles/seccionImg.css";
 
 const SeccionImg = () => {
   return (
-    <div className="content__masProyectos">
+    <div className="container content__masProyectos">
     <div className="depth-container">
       <img src="/images/ecommerce-js2.png" alt="" />
 
