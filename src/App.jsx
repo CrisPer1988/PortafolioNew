@@ -12,14 +12,13 @@ import AcercaDeMi from './components/AcercaDeMi'
 
 
 function App() {
+  
 
   return (
 
     <div className="App">
      <NavBar 
- 
      />
-     
      <Home/>
      <AcercaDeMi />
     <Proyectos />

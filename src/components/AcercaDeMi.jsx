@@ -1,5 +1,4 @@
 import {useState} from 'react';
-
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -10,7 +9,7 @@ const AcercaDeMi = () => {
 
 
   return (
-    <section id='acercaDeMi' className="container content__home">
+    <section data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id='acercaDeMi' className="container content__home">
       <div className='acercaDeMi__text'>
         <h2>¿Que me describe? <br /> ¿Como soy?</h2>
         <ul>
