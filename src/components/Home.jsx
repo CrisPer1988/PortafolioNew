@@ -4,9 +4,12 @@ import React, { useState } from 'react';
 const Home = () => {
 
   const [textHome, setTextHome] = useState("Hola, soy Cristian")
+  const [show, setShow] = useState(false)
+
 
   const handleMouseLeave = () => {
     setTextHome('Hola, soy Cristian');
+    setShow(false)
   };
 
   const handleHover = () => {
@@ -16,6 +19,7 @@ const Home = () => {
       <i className='bx bxl-whatsapp whats__home'></i>
      </a>
     </div>);
+    setShow(true)
   };
 
   return (
@@ -26,7 +30,7 @@ const Home = () => {
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
       >{textHome}</h1>
-      <h5 className="finger__hover">Pasa el raton 👆</h5>
+      <h5 className={`finger__hover ${show ? "no" : ""}`}>Pasa el raton 👆</h5>
       <h4>&lt; DESARROLLADOR FULL STACK &gt;</h4>
       <h5>Bienvenid@</h5>
     </div>

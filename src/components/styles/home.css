@@ -50,6 +50,10 @@
     font-family: fantasy;
 }
 
+.no {
+    display: none;
+}
+
 @keyframes move {
     0%{transform: translateX(0)}
     50%{transform: translateX(10px)}
