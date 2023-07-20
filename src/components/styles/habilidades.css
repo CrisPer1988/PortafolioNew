@@ -26,6 +26,7 @@
 .img__habilidades {
     width: 100px;
     transition: transform 0.5s;
+       border-radius: 50%;
 }
 
 .img__habilidades:hover {
@@ -47,7 +48,7 @@
 
 .habilidad__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     gap: 4rem;
     margin-top: 20px;
@@ -86,6 +87,7 @@ li {
 
     .img__habilidades {
         width: 90px;
+     
     }
 
   

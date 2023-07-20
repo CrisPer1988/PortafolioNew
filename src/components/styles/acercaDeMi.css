@@ -1,15 +1,15 @@
 .content__home {
-    
     padding-top: 80px;
     margin-bottom: 30px ;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    background-color: rgb(245, 148, 11);
-    
+    background-color: #198754;
+    color: rgb(234, 234, 234);
+    align-items: center;
     border-radius: 15px;
-    color: rgb(53, 53, 53);
-    
+    padding: 20px;
+    font-family: cursive;
 }
 
 .content__home img {
@@ -26,7 +26,6 @@
 
 .title__hablandas {
     font-size: 1.3rem;
-    /* font-family: cursive; */
     text-decoration:underline;
 }
 
@@ -37,12 +36,25 @@
 }
 
 .img__acerca {
-   max-width: 280px; 
+   max-width: 400px; 
+  
+   /* border-radius: 10%; */
+   animation: moveImg 5s infinite;
+ 
+   
+}
+
+@keyframes moveImg {
+    0%{border-radius: 50%}
+    50%{border-radius: 5%}
+    100%{border-radius: 50%}
+
 }
 
 @media (max-width: 780px) {
     .content__home {
         grid-template-columns: 1fr;
+        padding: 10px;
         
     }
 

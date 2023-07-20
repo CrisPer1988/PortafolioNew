@@ -1,5 +1,6 @@
 .App {
     max-width: 1400px;
     margin: 0 auto;
-    background-color: rgb(26, 26, 26);
+    /* background-color: rgb(26, 26, 26); */
+    background-color: rgb(4, 4, 61);
 }

@@ -35,6 +35,18 @@ const habilidades = [
         name: "Redux",
         pocentaje: 78
     },
+    {
+        img: "/images/typescript.svg",
+        id: 7,
+        name: "TypeScript",
+        pocentaje: 70
+    },
+    {
+        img: "/images/postgres.png",
+        id: 8,
+        name: "PostgreSQL",
+        pocentaje: 60
+    },
 ]
 
 export default habilidades

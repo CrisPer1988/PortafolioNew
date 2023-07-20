@@ -54,7 +54,7 @@ const Habilidades = () => {
         
         {
           habilidades.map(habilImg => (
-            <div data-aos="fade-up" duration="6000" className='content__img-habilidad' key={habilImg.id}>
+            <div className='content__img-habilidad' key={habilImg.id}>
                 
                     <img className='img__habilidades' src={habilImg.img} alt="" />
                     </div>

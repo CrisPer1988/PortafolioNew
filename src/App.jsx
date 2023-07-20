@@ -17,9 +17,8 @@ function App() {
   return (
 
     <div className="App">
-     <NavBar 
-     />
-     <Home/>
+     <NavBar />
+     <Home />
      <AcercaDeMi />
     <Proyectos />
     <SeccionImg />

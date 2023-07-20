@@ -28,7 +28,7 @@
 
 
 .item__icons a {
-    color: rgb(247, 144, 18);
+    color: #198754;
     transition: transform 0.5s;
     z-index: 10000;
 }

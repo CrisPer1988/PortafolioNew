@@ -29,7 +29,7 @@ const AcercaDeMi = () => {
         </ul>
       </div>
       <div>
-        <img className='img__acerca' src="images/Foto-home.png" alt="" />
+        <img className='img__acerca' src="images/acercaDeMiIMG.png" alt="" />
       </div>
     </section>
   )
