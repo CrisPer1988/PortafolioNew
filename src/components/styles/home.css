@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url("images/background-home.png");
+    background-image: url("/images/background-home.png");
     background-repeat: no-repeat;
     background-position: 100% 100%;
    
