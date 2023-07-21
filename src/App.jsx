@@ -21,7 +21,7 @@ function App() {
      <Home />
      <AcercaDeMi />
     <Proyectos />
-    <SeccionImg />
+    {/* <SeccionImg /> */}
     <Habilidades />
     <FormularioDeContacto />
     <Footer />

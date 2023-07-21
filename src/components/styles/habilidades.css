@@ -1,12 +1,50 @@
 .contaniner__habilidades {
-    background-color: white;
     padding: 150px 10px 10px 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #424649;
     border-radius: 15px;
     margin-top: 30px;
+    position: relative;
+}
+
+.vector__habilidad {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(249, 193, 22);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    z-index: -1;
+
+}
+
+.vector__habilidad2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(249, 193, 22);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    z-index: -1;
+}
+
+.vector__habilidad3 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(249, 193, 22);
+    border-bottom: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    right: 280px;
+    z-index: -1;
 }
 
 .text__habilidades{
@@ -69,6 +107,28 @@ li {
 @media (max-width: 992px) {
     .contaniner__habilidades {
         padding: 10px;
+       
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .vector__habilidad {
+        width: 150px;
+        height: 150px;
+        top: 50px;
+    }
+
+    .vector__habilidad2 {
+        top: 300px;
+        right: 60px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .vector__habilidad3 {
+        display: none;
        
     }
     

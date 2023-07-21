@@ -9,9 +9,16 @@ const AcercaDeMi = () => {
 
 
   return (
-    <section data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id='acercaDeMi' className="container content__home">
+    <section data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id='acercaDeMi' className="content__home">
+      <div className='vector__aboutme1'></div>
+      <div className='vector__aboutme2'></div>
+      <div className='vector__aboutme3'>:::::</div>
       <div className='acercaDeMi__text'>
-        <h2>¿Que me describe? <br /> ¿Como soy?</h2>
+        <div className='content__title-carita'>
+        <h1>¿Que me describe? <br /> <h3>¿Como soy?...</h3></h1>
+        <span className='carita'>🤔</span>
+        </div>
+        
         <ul>
           <li className='title__hablandas'>Responsable:</li>
           <h5 className='description__ol'>Ante todo, responsabilidad</h5>
@@ -28,9 +35,9 @@ const AcercaDeMi = () => {
           <h5 className='description__ol'>Lo que mas disfruto</h5>
         </ul>
       </div>
-      <div>
+      {/* <div>
         <img className='img__acerca' src="images/acercaDeMiIMG.png" alt="" />
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -1,15 +1,48 @@
 .content__home {
     padding-top: 80px;
     margin-bottom: 30px ;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    background-color: #198754;
-    color: rgb(234, 234, 234);
-    align-items: center;
-    border-radius: 15px;
-    padding: 20px;
-    font-family: cursive;
+    /* background-color: #198754;
+    color: rgb(234, 234, 234); */
+    /* align-items: center;
+    border-radius: 15px; */
+    /* padding: 20px;
+    font-family: cursive; */
+    position: relative;
+}
+
+.vector__aboutme1 {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(249, 193, 22);
+    z-index: -2;
+    top: 30px;
+    left: 50%;
+    font-size: 3rem;
+}
+
+.vector__aboutme2 {
+    width: 60px;
+    height: 260px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    background-color: rgb(249, 193, 22);
+    z-index: -2;
+    top: 30%;
+    left: 0;
+    font-size: 3rem;
+}
+
+.vector__aboutme3 {
+    position: absolute;
+    color: rgb(56, 56, 56);
+    bottom: 100px;
+    left: 100px;
+    font-size: 3rem;
+    letter-spacing: 15px;
+
 }
 
 .content__home img {
@@ -18,10 +51,26 @@
 
 .acercaDeMi__text {
     display: flex;
-    flex-direction: column;
-    
+    height: 100vh;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
     align-items:center;
     gap: 1rem;
+}
+
+.point {
+    font-size: 3rem;
+}
+
+
+.content__title-carita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carita {
+    font-size: 7rem; 
 }
 
 .title__hablandas {
@@ -51,11 +100,22 @@
 
 }
 
+@media (max-width: 700px) {
+    .acercaDeMi__text {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
+
 @media (max-width: 780px) {
     .content__home {
         grid-template-columns: 1fr;
-        padding: 10px;
-        
+        padding: 10px; 
+    }
+
+    .vector__aboutme3 {
+        display: none;
     }
 
     .title__hablandas {

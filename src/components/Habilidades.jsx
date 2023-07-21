@@ -12,7 +12,10 @@ const Habilidades = () => {
    }, [])
 
   return (
-    <section  data-aos="fade-up" duration="6000" id='habilidades' className='container contaniner__habilidades'>
+    <section  data-aos="fade-up" duration="6000" id='habilidades' className='contaniner__habilidades'>
+        <div className="vector__habilidad"></div>
+        <div className="vector__habilidad2"></div>
+        <div className="vector__habilidad3"></div>
         <div className='text__habilidades'>
         <h2>Habilidades</h2>
         <p >Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las

@@ -24,14 +24,20 @@ const Home = () => {
 
   return (
   <header id="home" className="container__home">
+    <div className="vector__home">....</div>
+    <div className="vector__home1">.....</div>
+    <div className="vector__home2">:::::</div>
+    <div className="vector__home3"></div>
+    <div className="vector__home4"><div className="complemet__vector4"></div></div>
+    <div className="circle__home"></div>
     <div className="content__text-home">
       <h1 
-      className="hola"
+      className="text__animation-hover"
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
       >{textHome}</h1>
       <h5 className={`finger__hover ${show ? "no" : ""}`}>Pasa el raton 👆</h5>
-      <h4>&lt; DESARROLLADOR FULL STACK &gt;</h4>
+      <h3>&lt; DESARROLLADOR FULL STACK &gt;</h3>
       <h5>Bienvenid@</h5>
     </div>
     {/* <div className="animation__home"><img src="images/home-image-removebg-preview.png" alt="" /></div> */}

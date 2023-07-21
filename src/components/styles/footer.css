@@ -28,14 +28,14 @@
 
 
 .item__icons a {
-    color: #198754;
+    color: rgb(249, 193, 22);
     transition: transform 0.5s;
     z-index: 10000;
 }
 
 .item__icons a:hover {
-    color: rgb(99, 202, 81);
-    transform: scale(1.5);
+    color: rgb(255, 124, 17);
+    transform: scale(1.2);
 }
 
 .createBy {

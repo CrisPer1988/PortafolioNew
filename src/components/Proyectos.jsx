@@ -16,7 +16,9 @@ const Proyectos = () => {
 
   return (
     <>
-    <div id="proyectos" className="container content__proyectos">
+    <div id="proyectos" className="content__proyectos">
+      <div className="vector__proyectos">:::::</div>
+      <div className="vector__proyectos vector__proyectos2">:::::</div>
       <div className="bootstrap">
         <div data-aos="fade-up" duration="6000" className="text__proyectos">
           <h2>Proyectos</h2>
