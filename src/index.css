@@ -11,9 +11,12 @@
     --vector-circle: rgb(249, 193, 22);
     --vector-point: rgb(65, 65, 65);
     --text-color-black: rgb(64, 64, 64);
+    --hover-home: #5b5b5b;
     --black: rgb(67, 67, 67);
     --background: rgb(242, 246, 209);
     --background-proyectos: rgb(249, 193, 22);
+    --whats-home:#25b840;
+
 
     --light-black: rgb(151, 151, 151);
     --white: white;
@@ -27,6 +30,9 @@
     --vector-point: rgb(187, 187, 187);
     --text-color-black: rgb(255, 255, 255);
     --background-proyectos: rgb(171, 129, 4);
+    --hover-home: #cfcfcf;
+    --whats-home:#00ff2f;
+
 
  
 

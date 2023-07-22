@@ -105,12 +105,12 @@
 
 
 .hover-text {
-    color: #5b5b5b;
+    color: var(hover-home);
     animation: whats 1.5s infinite;
 }
 
 .whats__home {
-    color: #25b840;
+    color: var(--whats-home);
     font-size: 4rem;
     animation: whats 0.8s infinite;
 }

@@ -15,7 +15,7 @@
     z-index: 5;
     bottom: 0px;
     right: 20px;
-    color: rgb(56, 56, 56);
+    color: var(--vector-point);
 }
 
 .vector__proyectos2 {
