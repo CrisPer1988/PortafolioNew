@@ -1,5 +1,5 @@
 .contaniner__habilidades {
-    padding: 160px 10px 10px 10px;
+    padding: 160px 15px 10px 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -45,7 +45,14 @@
     top: 80px;
     right: 280px;
     z-index: -1;
-} */
+} 
+
+.content__header-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .text__habilidades{
     font-size: 1.3rem;
@@ -56,7 +63,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 1.2rem;  
     color: rgb(68, 68, 68);
-    padding: 50px 0 80px 0;
+    padding: 30px 0 50px 0;
+    
 }
 
 .lista__habilidades li {

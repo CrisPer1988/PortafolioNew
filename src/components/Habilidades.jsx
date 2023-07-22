@@ -16,8 +16,9 @@ const Habilidades = () => {
         <div className="vector__habilidad"></div>
         <div className="vector__habilidad2"></div>
         <div className="vector__habilidad3"></div>
+        <div className='content__header-habilidades'>
         <div className='text__habilidades'>
-        <h2>Habilidades</h2>
+          <h2>Habilidades</h2>
         <p >Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
           tecnologias con las que he trabajado.
         </p>
@@ -39,6 +40,8 @@ const Habilidades = () => {
           <li>Morgan</li>
           <li>PostgreSQL</li>
         </ul>
+          </div>
+        
         
         <h2 className='subtitle'>Esta barra esta en constante progresión!!! 😛</h2>
         {
