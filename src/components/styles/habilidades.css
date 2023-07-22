@@ -1,5 +1,5 @@
 .contaniner__habilidades {
-    padding: 150px 10px 10px 10px;
+    padding: 160px 10px 10px 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,20 +9,20 @@
 }
 
 .vector__habilidad {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(249, 193, 22);
+    width: 400px;
+    height: 400px;
+    background-color: rgb(249, 192, 22);
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     border-radius: 50%;
     position: absolute;
-    top: 200px;
-    left: 20px;
+    top: 5%;
+    left: 5%;
     z-index: -1;
 
 }
-
-.vector__habilidad2 {
+/* 
+/* .vector__habilidad2 {
     width: 150px;
     height: 150px;
     background-color: rgb(249, 193, 22);
@@ -33,7 +33,7 @@
     top: 400px;
     right: 0;
     z-index: -1;
-}
+} */
 
 .vector__habilidad3 {
     width: 250px;
@@ -45,7 +45,7 @@
     top: 80px;
     right: 280px;
     z-index: -1;
-}
+} */
 
 .text__habilidades{
     font-size: 1.3rem;
@@ -53,8 +53,10 @@
 
 .lista__habilidades {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 1.2rem;  
+    color: rgb(68, 68, 68);
+    padding: 50px 0 80px 0;
 }
 
 .lista__habilidades li {
@@ -84,15 +86,16 @@
 
 }
 
+.subtitle {
+    text-decoration: underline;
+}
+
 .habilidad__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     gap: 4rem;
     margin-top: 20px;
-    
-    
-
 }
 
 li {
@@ -100,7 +103,8 @@ li {
 }
 
 .habilidad__bar {
-   padding: 0 20px;
+   /* padding: 0 20px; */
+   margin-top: 20px;
 }
 
 
@@ -110,6 +114,12 @@ li {
        
     }
     
+    .vector__habilidad3 {
+        top: 120px;
+        right: 60px;
+        width: 160px;
+        height: 160px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -128,8 +138,10 @@ li {
 
 
     .vector__habilidad3 {
-        display: none;
-       
+        top: 250px;
+        right: 0px;
+        width: 160px;
+        height: 160px;
     }
     
 }

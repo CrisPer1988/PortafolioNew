@@ -81,6 +81,10 @@ padding: 0 70px;
     .owl {
         display: none;
     }
+
+    .vector__proyectos {
+        display: none;
+    }
 }
 
 

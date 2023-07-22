@@ -40,12 +40,15 @@ const Habilidades = () => {
           <li>PostgreSQL</li>
         </ul>
         
-        
+        <h2 className='subtitle'>Esta barra esta en constante progresión!!! 😛</h2>
         {
             habilidades?.map(habilidad => (
                 <div data-aos="fade-down" duration="6000" className='habilidad__bar' key={habilidad.id}>
-                    <h2>{habilidad.name}</h2>
+                    <div>
+                    <h4>{habilidad.name}</h4>
                     <ProgressBar animated variant="warning" striped now={habilidad.pocentaje} />                 
+                    </div>
+                    
                 </div>
             ))     
         }
