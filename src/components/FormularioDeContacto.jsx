@@ -52,6 +52,7 @@ const FormularioDeContacto = () => {
     <div className="item__form">
         <label htmlFor="">Mensaje</label>
       <textarea
+      className='puto'
       placeholder='Escribe tu mensaje'
         id="message"
         name="message"
