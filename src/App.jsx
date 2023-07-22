@@ -12,13 +12,24 @@ import AcercaDeMi from './components/AcercaDeMi'
 
 
 function App() {
+  const [mode, setMode] = useState(false)
+
+  const handleMode = () => {
+    setMode(!mode)
+  }
   
+  console.log(mode);
 
   return (
 
-    <div className="App">
+    <div className={`App ${mode && "dark_mode"}`}>
+      <div onClick={handleMode} className="mode">
+        {
+          mode ? <i className='bx bxs-sun moon__sun'></i> : <i className='bx bxs-moon moon__sun'></i> 
+        }
+      </div>
      <NavBar />
-     <Home />
+     <Home mode={mode}/>
      <AcercaDeMi />
     <Proyectos />
     {/* <SeccionImg /> */}

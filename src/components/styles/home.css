@@ -9,12 +9,14 @@
     background-repeat: no-repeat;
     background-position: 100% 100%; */
     position: relative;
+    color: var(--text-color-black);
 }
 
 .circle__home {
     width: 300px;
     height: 300px;
-    background-color: rgb(249, 193, 22);
+    background-color: var(--vector-circle);
+
     border-radius: 50%;
     position: absolute;
 }
@@ -24,7 +26,7 @@
     bottom: 120px;
     left: 66px;
     font-size: 3rem;
-    color: rgb(56, 56, 56);
+    color: var(--vector-point);
     letter-spacing: 15px;
 }
 
@@ -35,7 +37,7 @@
     bottom: 100px;
     left: 50px;
     font-size: 3rem;
-    color: rgb(56, 56, 56);
+    color: var(--vector-point);
     letter-spacing: 15px;
 
 }
@@ -46,13 +48,15 @@
     right: 50px;
     font-size: 3rem;
     letter-spacing: 15px;
-    color: rgb(56, 56, 56);
+    color: var(--vector-point);
+
 }
 
 .vector__home3 {
     width: 80px;
     height: 80px;
-    background-color: rgb(249, 193, 22);
+    background-color: var(--vector-circle);
+
     border-radius: 50%;
     position: absolute;
     top: 100px;
@@ -75,7 +79,7 @@
 .complemet__vector4 {
     width: 110px;
     height: 110px;
-    background-color: rgb(249, 193, 22);
+    background-color: var(--vector-circle);
     padding: 10px;
     border-radius: 50%;
     position: absolute;
@@ -128,6 +132,8 @@
 .no {
     display: none;
 }
+
+
 
 @keyframes move {
     0%{transform: translateX(0)}

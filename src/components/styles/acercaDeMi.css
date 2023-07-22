@@ -8,6 +8,7 @@
     /* padding: 20px;
     font-family: cursive; */
     position: relative;
+    color: var(--text-color-black);
 }
 
 .vector__aboutme1 {
@@ -15,7 +16,7 @@
     height: 210px;
     border-radius: 50%;
     position: absolute;
-    background-color: rgb(249, 193, 22);
+    background-color: var(--vector-circle);
     z-index: -2;
     top: 30px;
     left: 50%;
@@ -28,7 +29,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     position: absolute;
-    background-color: rgb(249, 193, 22);
+    background-color: var(--vector-circle);
     z-index: -2;
     top: 30%;
     left: 0;
@@ -37,7 +38,7 @@
 
 .vector__aboutme3 {
     position: absolute;
-    color: rgb(56, 56, 56);
+    color: var(--vector-point);
     bottom: 100px;
     left: 100px;
     font-size: 3rem;

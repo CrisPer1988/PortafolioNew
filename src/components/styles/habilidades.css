@@ -6,12 +6,13 @@
     border-radius: 15px;
     margin-top: 30px;
     position: relative;
+    color: var(--text-color-black);
 }
 
 .vector__habilidad {
     width: 400px;
     height: 400px;
-    background-color: rgb(249, 192, 22);
+    background-color: var(--vector-circle);
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     border-radius: 50%;
@@ -38,7 +39,7 @@
 .vector__habilidad3 {
     width: 250px;
     height: 250px;
-    background-color: rgb(249, 193, 22);
+    background-color: var(--vector-circle);
     border-bottom: 2px solid black;
     border-radius: 50%;
     position: absolute;
@@ -62,7 +63,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 1.2rem;  
-    color: rgb(68, 68, 68);
+    
     padding: 30px 0 50px 0;
     
 }

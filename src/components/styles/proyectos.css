@@ -1,9 +1,10 @@
 .content__proyectos {
-    background-color: rgb(249, 193, 22);
+    background-color: var(--background-proyectos);
     padding: 50px 30px 10px 30px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
+    color: var(--text-color-black);
 }
 
 .vector__proyectos {

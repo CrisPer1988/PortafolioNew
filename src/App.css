@@ -3,5 +3,35 @@
     margin: 0 auto;
     /* background-color: rgb(26, 26, 26); */
     /* background-color: rgb(4, 4, 61); */
-    background-color: rgb(242, 246, 209);
+    background-color: var(--background);
+}
+
+.mode {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* background-color: red; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 60px;
+    left: 8px;
+}
+
+.moon__sun {
+    font-size: 2.5rem;
+    color: var(--text-color-black);
+}
+
+@media (max-width: 500px) {
+    .moon__sun {
+        font-size: 2rem;
+        
+    }
+    
 }

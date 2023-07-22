@@ -1,8 +1,7 @@
 import "./styles/home.css"
 import React, { useState } from 'react';
 
-const Home = () => {
-
+const Home = ({mode}) => {
   const [textHome, setTextHome] = useState("Hola, soy Cristian")
   const [show, setShow] = useState(false)
 
@@ -23,7 +22,7 @@ const Home = () => {
   };
 
   return (
-  <header id="home" className="container__home">
+  <header id="home" className={`container__home ${mode && "dark_mode"}`}>
     <div className="vector__home">....</div>
     <div className="vector__home1">.....</div>
     <div className="vector__home2">:::::</div>
@@ -31,6 +30,8 @@ const Home = () => {
     <div className="vector__home4"><div className="complemet__vector4"></div></div>
     <div className="circle__home"></div>
     <div className="content__text-home">
+
+      
       <h1 
       className="text__animation-hover"
       onMouseEnter={handleHover}

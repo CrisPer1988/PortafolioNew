@@ -8,10 +8,13 @@
 }
 
 :root {
-    --navbar: rgb(255, 213, 0);
-    --home: rgb(255, 255, 255);
+    --vector-circle: rgb(249, 193, 22);
+    --vector-point: rgb(65, 65, 65);
     --text-color-black: rgb(64, 64, 64);
     --black: rgb(67, 67, 67);
+    --background: rgb(242, 246, 209);
+    --background-proyectos: rgb(249, 193, 22);
+
     --light-black: rgb(151, 151, 151);
     --white: white;
     --light-white: rgb(229, 229, 229);
@@ -19,13 +22,14 @@
 }
 
 .dark_mode {
-    --navbar: rgb(33, 7, 183);
-    --home: rgb(100, 100, 100);
-    --text-color-black: rgb(239, 239, 239);
-    --black: rgb(67, 67, 67);
-    --light-black: rgb(151, 151, 151);
-    --white: white;
-    --light-white: rgb(229, 229, 229);
+    --vector-circle:rgb(171, 129, 4);
+    --background: rgb(47, 47, 47);
+    --vector-point: rgb(187, 187, 187);
+    --text-color-black: rgb(255, 255, 255);
+    --background-proyectos: rgb(171, 129, 4);
+
+ 
+
 }
 
 img {
