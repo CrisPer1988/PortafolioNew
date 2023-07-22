@@ -26,6 +26,15 @@
 .moon__sun {
     font-size: 2.5rem;
     color: var(--text-color-black);
+    animation: moveSun 1.8s infinite;
+}
+
+@keyframes moveSun {
+    0%{transform: translateY(0)}
+    50%{transform: translateY(10px)}
+    100%{transform: translateY(0)}
+
+    
 }
 
 @media (max-width: 500px) {

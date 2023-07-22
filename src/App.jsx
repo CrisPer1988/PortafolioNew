@@ -15,10 +15,10 @@ function App() {
   const [mode, setMode] = useState(false)
 
   const handleMode = () => {
-    setMode(!mode)
+    setMode(!mode);
   }
-  
-  console.log(mode);
+
+
 
   return (
 
