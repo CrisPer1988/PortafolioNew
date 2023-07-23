@@ -20,13 +20,13 @@ const habilidades = [
     {
         img: "/images/logo-react.png",
         id: 4,
-        name: "React.js",
+        name: "React",
         pocentaje: 85
     },
     {
         img: "/images/nodejs.png",
         id: 5,
-        name: "Node.js",
+        name: "Node",
         pocentaje: 88
     },
     {

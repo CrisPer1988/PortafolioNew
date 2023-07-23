@@ -4,11 +4,13 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import "./styles/habilidades.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import colors from "../utils/colors"
 
 const Habilidades = () => {
   useEffect(() => {
     Aos.init();
   }, []);
+  
 
   return (
     <section
@@ -44,7 +46,9 @@ const Habilidades = () => {
             <h4>{habilidad.name}</h4>
             <div
               style={{
-                background: `conic-gradient(from -90deg at 50% 50%, rgb(249, 193, 22) 0%, rgb(190, 170, 12) ${habilidad.pocentaje}%, rgb(242, 255, 250) ${habilidad.pocentaje}%, rgb(242, 255, 250) 100%)`,
+                // background: `conic-gradient(from -90deg at 50% 50%, rgb(249, 193, 22) 0%, rgb(190, 170, 12) ${habilidad.pocentaje}%, rgb(242, 255, 250) ${habilidad.pocentaje}%, rgb(242, 255, 250) 100%)`,
+                background: `conic-gradient(from -90deg at 50% 50%,${colors[habilidad.name]?.color} 0%,${colors[habilidad.name]?.color} ${habilidad.pocentaje}%, rgb(242, 255, 250) ${habilidad.pocentaje}%, rgb(242, 255, 250) 100%)`,
+              
               }}
               className="circle"
             >
