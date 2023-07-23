@@ -6,16 +6,16 @@ let colors = {
         color: '#E35825'
     },
     Css: {
-        color: '#133258'
+        color: '#02FB'
     },
     React: {
-        color: "#133258"
+        color: '#19FB'
     },
     Node: {
-        color: "#3BB039"
+        color: "#90c53f"
     },
     Redux: {
-        color: "#5B3184"
+        color: "#673ab7"
     },
     TypeScript: {
         color: "#1479FB"
