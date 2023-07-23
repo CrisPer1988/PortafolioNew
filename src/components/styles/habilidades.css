@@ -207,18 +207,13 @@ li {
         display: flex;
         flex-wrap: wrap;
         padding: 5px;
-       
         gap: 0.2rem;
     }
 
-    
-
     .lista__habilidades li {
         font-size: 1rem;
-        /* border: 1px solid black; */
         padding: 5px;
         border-radius: 10px;
-        
     }
 
     .img__habilidades {

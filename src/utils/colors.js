@@ -21,7 +21,7 @@ let colors = {
         color: "#1479FB"
     },
     PostgreSQL: {
-        color: "#82B2F1"
+        color: "#336791"
     },
 
 
