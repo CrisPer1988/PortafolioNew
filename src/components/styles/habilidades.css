@@ -215,9 +215,10 @@ li {
 
     .lista__habilidades li {
         font-size: 1rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         padding: 5px;
         border-radius: 10px;
+        
     }
 
     .img__habilidades {
