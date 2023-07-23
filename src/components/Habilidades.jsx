@@ -44,8 +44,6 @@ const Habilidades = () => {
             <h4>{habilidad.name}</h4>
             <div
               style={{
-                // width: "130px" /* Ajusta el ancho del círculo */,
-                // height: "130px" /* Ajusta la altura del círculo */,
                 background: `conic-gradient(from -90deg at 50% 50%, rgb(249, 193, 22) 0%, rgb(190, 170, 12) ${habilidad.pocentaje}%, rgb(210, 210, 210) ${habilidad.pocentaje}%, rgb(210, 210, 210) 100%)`,
               }}
               className="circle"
@@ -66,6 +64,7 @@ const Habilidades = () => {
           <li>React Router</li>
           <li>Redux</li>
           <li>Bootstrap</li>
+          <li>Typescript</li>
           <li>Taildwind</li>
           <li>React hook form</li>
           <li>Git</li>
