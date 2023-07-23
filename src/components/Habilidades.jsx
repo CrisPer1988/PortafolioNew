@@ -44,7 +44,7 @@ const Habilidades = () => {
             <h4>{habilidad.name}</h4>
             <div
               style={{
-                background: `conic-gradient(from -90deg at 50% 50%, rgb(249, 193, 22) 0%, rgb(190, 170, 12) ${habilidad.pocentaje}%, rgb(210, 210, 210) ${habilidad.pocentaje}%, rgb(210, 210, 210) 100%)`,
+                background: `conic-gradient(from -90deg at 50% 50%, rgb(249, 193, 22) 0%, rgb(190, 170, 12) ${habilidad.pocentaje}%, rgb(242, 255, 250) ${habilidad.pocentaje}%, rgb(242, 255, 250) 100%)`,
               }}
               className="circle"
             >
