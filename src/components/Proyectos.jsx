@@ -38,7 +38,7 @@ const Proyectos = () => {
                 alt="First slide"
               />
               <div className="content__info-proyectos">
-                <h3 className="title__descripcion">{image.descripcion}</h3>
+                {/* <h3 className="title__descripcion">{image.descripcion}</h3> */}
                 <Nav.Link href={image.link} target="_blank">
                   {image.link}
                 </Nav.Link>

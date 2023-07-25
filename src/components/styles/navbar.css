@@ -22,12 +22,13 @@
         color: rgb(242, 242, 242)}
     75%{
         transform: translateY(0px);
-        transform: rotateY(180deg);
+        /* transform: rotateY(180deg); */
         color: rgb(17, 40, 249)}
     
         100%{
-            transform: rotateY(360deg);
-    
+            /* transform: rotateY(360deg); */
+        transform: translateY(5px);
+            
             color:rgb(174, 174, 174)}
     
 }
