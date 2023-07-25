@@ -160,6 +160,7 @@
     z-index: 60000;
     display: flex;
     gap: 1rem;
+    cursor: pointer;
 
     position: fixed;
     top: 12px;
