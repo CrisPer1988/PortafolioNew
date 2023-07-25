@@ -16,7 +16,10 @@ const NavBar = () => {
       <Container>
       
         <Navbar.Brand className='nombre' href="#home"> Cristian-Perez </Navbar.Brand>
-        
+        <div className="content__flags">
+      <img onClick={() => i18n.changeLanguage("es")} className="img__flag" src="/images/esp.png" alt="" />
+      <img onClick={() => i18n.changeLanguage("en")} className="img__flag" src="/images/eng.png" alt="" />
+      </div>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -32,3 +32,14 @@
     
 }
 
+.content__flags {
+    width: 35px;
+   
+     display: flex;
+    gap: 0.5rem; 
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+}
+

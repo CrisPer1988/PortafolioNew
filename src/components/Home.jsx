@@ -35,10 +35,11 @@ const Home = ({mode}) => {
 
     {/* <button onClick={() => i18n.changeLanguage("es")} style={{color: "red", zIndex: 8000}}>ES</button>
       <button onClick={() => i18n.changeLanguage("en")} style={{color: "red", zIndex: 8000}}>EN</button> */}
-      <div className="content__flags">
+      
+      {/* <div className="content__flags">
       <img onClick={() => i18n.changeLanguage("es")} className="img__flag" src="/images/esp.png" alt="" />
       <img onClick={() => i18n.changeLanguage("en")} className="img__flag" src="/images/eng.png" alt="" />
-      </div>
+      </div> */}
       
       <h1 
       className="text__animation-hover"
