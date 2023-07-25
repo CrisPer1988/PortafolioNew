@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 import "./styles/formulario.css"
 import "aos/dist/aos.css"
+import {useTranslation} from "react-i18next"
 
 const FormularioDeContacto = () => {
+  const [t, i18next] = useTranslation("contact")
     
     const [state, handleSubmit] = useForm("xnqyongg");
     if (state.succeeded) {
@@ -15,13 +17,13 @@ const FormularioDeContacto = () => {
   return (
     <div className='content__form'>
     <form data-aos="fade-down" duration="10000" className='form__items' onSubmit={handleSubmit}>
-    <h2>Contactame</h2>
+    <h2>{t("contact.title")}</h2>
 <div className="item__form">
 <label htmlFor="name">
-        Nombre
+        {t("contact.labelName")}
       </label>
       <input
-      placeholder='Escribe tu nombre'
+      placeholder={t("contact.inputName")}
         id="name"
         type="name" 
         name="name"
@@ -34,10 +36,10 @@ const FormularioDeContacto = () => {
       </div>
     <div className="item__form">
       <label htmlFor="email">
-        Email
+      {t("contact.labelEmail")}
       </label>
       <input
-      placeholder='Escribe tu email'
+      placeholder='{t("contact.inputEmail")}'
         id="email"
         type="email" 
         name="email"
@@ -50,10 +52,10 @@ const FormularioDeContacto = () => {
     </div>
 
     <div className="item__form">
-        <label htmlFor="">Mensaje</label>
+        <label htmlFor="">{t("contact.labelMessage")}</label>
       <textarea
       className='puto'
-      placeholder='Escribe tu mensaje'
+      placeholder={t("contact.inputMessage")}
         id="message"
         name="message"
       />
@@ -63,7 +65,7 @@ const FormularioDeContacto = () => {
         errors={state.errors}
       />
       <button className='btn__form' type="submit" disabled={state.submitting}>
-        Enviar
+      {t("contact.button")}
       </button>
       </div>
       

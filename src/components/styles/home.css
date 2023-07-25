@@ -155,7 +155,27 @@
     
 }
 
+.content__flags {
+    width: 50px;
+    z-index: 60000;
+    display: flex;
+    gap: 1rem;
+
+    position: fixed;
+    top: 65px;
+    right: 70px;
+}
+
 @media (max-width: 500px) {
+    .content__flags {
+      
+        width: 25px;
+        gap: 0.5rem;
+        left: 168px;
+        top: 15px;
+        
+    }
+
     .circle__home {
         width: 200px;
         height: 200px;

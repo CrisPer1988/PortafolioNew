@@ -1,0 +1,12 @@
+{
+    "contact": {
+        "title": "Contactame",
+        "labelName": "Nombre",
+        "inputName": "Escribe tu nombre",
+        "labelEmail":"Email",
+        "inputEmail":"Escribe tu email",
+        "labelMessage": "Mensaje",
+        "inputMessage": "Escribe tu mensaje",
+        "button": "Send"
+    }
+}

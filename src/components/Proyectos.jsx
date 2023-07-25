@@ -8,8 +8,11 @@ import Aos from "aos";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import {useTranslation} from "react-i18next"
 
 const Proyectos = () => {
+  const [t, i18n] = useTranslation("projects")
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -21,12 +24,9 @@ const Proyectos = () => {
       <div className="vector__proyectos vector__proyectos2">:::::</div>
       <div className="bootstrap">
         <div data-aos="fade-up" duration="6000" className="text__proyectos">
-          <h2>Proyectos</h2>
+        <h2>{t("projects.title")}</h2>
           <p>
-            En esta seccion te mostrare algunos de mis proyectos preferidos.
-            Pasa el raton por encima para acceder al link de muestra y a la
-            descripcion de cada proyecto. Espero que lo disfrutes tanto como yo
-            disfrute al realizarlos.{" "}
+          {t("projects.paragraph")}
           </p>
         </div>
         <Carousel data-aos="fade-down" duration="8000" variant="dark">
@@ -49,12 +49,9 @@ const Proyectos = () => {
         </div>
         <div className="content__proyectos owl">
         <div data-aos="fade-up" duration="6000" className="text__proyectos">
-          <h2>Proyectos</h2>
+          <h2>{t("projects.title")}</h2>
           <p>
-            En esta seccion te mostrare algunos de mis proyectos preferidos.
-            Pasa el raton por encima para acceder al link de muestra y a la
-            descripcion de cada proyecto. Espero que lo disfrutes tanto como yo
-            disfrute al realizarlos.{" "}
+          {t("projects.paragraph")}
           </p>
           </div>
         <OwlCarousel

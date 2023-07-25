@@ -3,9 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./styles/navbar.css"
+import {useTranslation} from "react-i18next"
 
 
 const NavBar = () => {
+  const [t, i18n] = useTranslation("navBar")
 
   return (
     <div>
@@ -19,11 +21,11 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#acercaDeMi">Sobre mí</Nav.Link>
-            <Nav.Link href="#proyectos">Proyectos</Nav.Link>
-            <Nav.Link href="#habilidades">Habilidades</Nav.Link>
-            <Nav.Link href="#contacto"><h6 className="contacto">Contacto</h6></Nav.Link>
+            <Nav.Link href="#home">{t("navBar.home")}</Nav.Link>
+            <Nav.Link href="#acercaDeMi">{t("navBar.about-me")}</Nav.Link>
+            <Nav.Link href="#proyectos">{t("navBar.projects")}</Nav.Link>
+            <Nav.Link href="#habilidades">{t("navBar.abilities")}</Nav.Link>
+            <Nav.Link href="#contacto"><h6 className="contacto">{t("navBar.contact")}</h6></Nav.Link>
             <Nav.Link href="/images/update-CV.pdf" target='_blank'>CV <i className='bx bx-download'></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>

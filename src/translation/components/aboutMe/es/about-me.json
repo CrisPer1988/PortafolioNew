@@ -1,0 +1,20 @@
+{
+    "about_me": {
+        "title": "¿Que me describe?",
+        "subtitle": "¿Como soy?...",
+        "li1": "Responsable:",
+        "ul1": "Ante todo, responsabilidad",
+        "li2": "Atento:",
+        "ul2": "Pendiente a todo",
+        "li3": "Compañero:",
+        "ul3": "Si el equipo no es amigo, no hay equipo",
+        "li4": "Puntual:",
+        "ul4": "Puntualidad = Respeto",
+        "li5": "Facilidad de aprendizaje:",
+        "ul5": "Si alguien lo hizo, tambien puedo hacerlo",
+        "ul5_2": "Si nadie lo hizo, seré el primero en hacerlo",
+        "li6": "Trabajo en equipo:",
+        "ul6": "Lo que mas disfruto"
+      
+    }
+}

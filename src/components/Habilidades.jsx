@@ -5,8 +5,11 @@ import "./styles/habilidades.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import colors from "../utils/colors"
+import {useTranslation} from "react-i18next"
 
 const Habilidades = () => {
+  const [t, i18n] = useTranslation("abilities")
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -24,10 +27,9 @@ const Habilidades = () => {
       <div className="vector__habilidad3"></div>
       <div className="content__header-habilidades">
         <div className="text__habilidades">
-          <h2>Habilidades</h2>
+          <h2>{t("abilities.title")}</h2>
           <p>
-            Estos son mis lenguajes favoritos. Pero te dejo en detalle todas las
-            tecnologias con las que he trabajado.
+            {t("abilities.paragraph")}
           </p>
         </div>
      

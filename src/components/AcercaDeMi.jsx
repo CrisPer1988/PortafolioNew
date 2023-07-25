@@ -1,10 +1,13 @@
 import {useState} from 'react';
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { useTranslation } from "react-i18next";
+
 
 import "./styles/acercaDeMi.css"
 
 const AcercaDeMi = () => {
+  const [t, i18n] = useTranslation("about_me")
   
 
 
@@ -15,24 +18,24 @@ const AcercaDeMi = () => {
       <div className='vector__aboutme3'>:::::</div>
       <div className='acercaDeMi__text'>
         <div className='content__title-carita'>
-        <h1>¿Que me describe? <br /> <h3>¿Como soy?...</h3></h1>
+        <h1>{t("about_me.title")}<br /> <h3>{t("about_me.subtitle")}</h3></h1>
         <span className='carita'>🤔</span>
         </div>
         
         <ul>
-          <li className='title__hablandas'>Responsable:</li>
-          <h5 className='description__ol'>Ante todo, responsabilidad</h5>
-          <li className='title__hablandas'>Atento:</li>
-          <h5 className='description__ol'>Pendiente a todo</h5>
-          <li className='title__hablandas'>Compañero:</li>
-          <h5 className='description__ol'>Si el equipo no es amigo, no hay equipo</h5>
-          <li className='title__hablandas'>Puntual:</li>
-          <h5 className='description__ol'>Puntualidad = Respeto</h5>
-          <li className='title__hablandas'>Facilidad de aprendizaje:</li>
-          <h5 className='description__ol'>Si alguien lo hizo, tambien puedo hacerlo</h5>
-          <h5 className='description__ol'>Si nadie lo hizo, seré el primero en hacerlo</h5>
-          <li className='title__hablandas'>Trabajo en equipo:</li>
-          <h5 className='description__ol'>Lo que mas disfruto</h5>
+          <li className='title__hablandas'>{t("about_me.li1")}</li>
+          <h5 className='description__ol'>{t("about_me.ul1")}</h5>
+          <li className='title__hablandas'>{t("about_me.li2")}</li>
+          <h5 className='description__ol'>{t("about_me.ul2")}</h5>
+          <li className='title__hablandas'>{t("about_me.li3")}</li>
+          <h5 className='description__ol'>{t("about_me.ul3")}</h5>
+          <li className='title__hablandas'>{t("about_me.li4")}</li>
+          <h5 className='description__ol'>{t("about_me.ul4")}</h5>
+          <li className='title__hablandas'>{t("about_me.li5")}</li>
+          <h5 className='description__ol'>{t("about_me.ul5")}</h5>
+          <h5 className='description__ol'>{t("about_me.ul5_2")}</h5>
+          <li className='title__hablandas'>{t("about_me.li6")}</li>
+          <h5 className='description__ol'>{t("about_me.ul6")}</h5>
         </ul>
       </div>
       {/* <div>
