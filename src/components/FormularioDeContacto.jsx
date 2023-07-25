@@ -39,7 +39,7 @@ const FormularioDeContacto = () => {
       {t("contact.labelEmail")}
       </label>
       <input
-      placeholder='{t("contact.inputEmail")}'
+      placeholder={t("contact.inputEmail")}
         id="email"
         type="email" 
         name="email"
