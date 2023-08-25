@@ -29,7 +29,7 @@ const NavBar = () => {
             <Nav.Link href="#proyectos">{t("navBar.projects")}</Nav.Link>
             <Nav.Link href="#habilidades">{t("navBar.abilities")}</Nav.Link>
             <Nav.Link href="#contacto"><h6 className="contacto">{t("navBar.contact")}</h6></Nav.Link>
-            <Nav.Link href="/images/update-CV.pdf" target='_blank'>CV <i className='bx bx-download'></i></Nav.Link>
+            <Nav.Link href="/images/CV.pdf" target='_blank'>CV <i className='bx bx-download'></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

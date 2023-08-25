@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
 
             <div className='item__icons'>
-            <a href="/images/update-CV.pdf" target="_blank"><i className='bx bx-download'></i></a>
+            <a href="/images/CV.pdf" target="_blank"><i className='bx bx-download'></i></a>
             <h5>CV</h5>
             </div>
         </div>
