@@ -1,0 +1,25 @@
+.contaniner__actual {
+  padding: 30px 15px 10px 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-top: 30px;
+  position: relative;
+  color: var(--text-color-black);
+}
+
+.content_imgs {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+@media (max-width: 850px) {
+  .content_imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+  }
+}

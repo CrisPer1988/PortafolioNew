@@ -4,16 +4,15 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import "./styles/habilidades.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
-import colors from "../utils/colors"
-import {useTranslation} from "react-i18next"
+import colors from "../utils/colors";
+import { useTranslation } from "react-i18next";
 
 const Habilidades = () => {
-  const [t, i18n] = useTranslation("abilities")
+  const [t, i18n] = useTranslation("abilities");
 
   useEffect(() => {
     Aos.init();
   }, []);
-  
 
   return (
     <section
@@ -28,58 +27,53 @@ const Habilidades = () => {
       <div className="content__header-habilidades">
         <div className="text__habilidades">
           <h2>{t("abilities.title")}</h2>
-          <p>
-            {t("abilities.paragraph")}
-          </p>
+          <p>{t("abilities.paragraph")}</p>
         </div>
-     
       </div>
 
-  <div className="habilidad__bar">
-     
-      {habilidades?.map((habilidad) => (
-        <div
-          data-aos="fade-down"
-          duration="6000"
-          
-          key={habilidad.id}
-        >
-          <div className="content__circle">
-            <h4>{habilidad.name}</h4>
-            <div
-              style={{
-                background: `conic-gradient(from -90deg at 50% 50%,${colors[habilidad.name]?.color} 0%,${colors[habilidad.name]?.color} ${habilidad.pocentaje}%, rgb(242, 255, 250) ${habilidad.pocentaje}%, rgb(242, 255, 250) 100%)`,            
-              }}
-              className="circle"
-            >
-              <div className="second__circle"></div>
-              <img className="img__progress" src={habilidad.img} alt="" />
+      <div className="habilidad__bar">
+        {habilidades?.map((habilidad) => (
+          <div data-aos="fade-down" duration="6000" key={habilidad.id}>
+            <div className="content__circle">
+              <h4>{habilidad.name}</h4>
+              <div
+                style={{
+                  background: `conic-gradient(from -90deg at 50% 50%,${
+                    colors[habilidad.name]?.color
+                  } 0%,${colors[habilidad.name]?.color} ${
+                    habilidad.pocentaje
+                  }%, rgb(242, 255, 250) ${
+                    habilidad.pocentaje
+                  }%, rgb(242, 255, 250) 100%)`,
+                }}
+                className="circle"
+              >
+                <div className="second__circle"></div>
+                <img className="img__progress" src={habilidad.img} alt="" />
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-      </div>  
+        ))}
+      </div>
 
-      <ul className="lista__habilidades">
-          <li>HTML</li>
-          <li>Css</li>
-          <li>JavasCript</li>
-          <li>React.js</li>
-          <li>React Router</li>
-          <li>Redux</li>
-          <li>Bootstrap</li>
-          <li>Typescript</li>
-          <li>Taildwind</li>
-          <li>React hook form</li>
-          <li>Git</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Express validator</li>
-          <li>Morgan</li>
-          <li>PostgreSQL</li>
-        </ul>
-
-   
+      {/* <ul className="lista__habilidades">
+        <li>HTML</li>
+        <li>Css</li>
+        <li>JavasCript</li>
+        <li>React.js</li>
+        <li>React Router</li>
+        <li>Redux</li>
+        <li>Bootstrap</li>
+        <li>Typescript</li>
+        <li>Taildwind</li>
+        <li>React hook form</li>
+        <li>Git</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>Express validator</li>
+        <li>Morgan</li>
+        <li>PostgreSQL</li>
+      </ul> */}
     </section>
   );
 };

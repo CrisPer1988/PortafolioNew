@@ -1,45 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Roboto+Serif:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Roboto+Serif:wght@900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Serif', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
 }
 
 :root {
-    --vector-circle: rgb(249, 193, 22);
-    --vector-point: rgb(65, 65, 65);
-    --text-color-black: rgb(64, 64, 64);
-    --hover-home: #5b5b5b;
-    --black: rgb(67, 67, 67);
-    --background: rgb(242, 246, 209);
-    --background-proyectos: rgb(249, 193, 22);
-    --whats-home:#25b840;
+  --vector-circle: #e8ae1b;
+  --vector-point: rgb(65, 65, 65);
+  --text-color-black: rgb(64, 64, 64);
+  --hover-home: #5b5b5b;
+  --black: rgb(67, 67, 67);
+  --background: rgb(247, 248, 232);
+  --background-proyectos: rgb(235, 236, 220);
+  --whats-home: #25b840;
 
-
-    --light-black: rgb(151, 151, 151);
-    --white: white;
-    --light-white: rgb(229, 229, 229);
-
+  --light-black: rgb(151, 151, 151);
+  --white: white;
+  --light-white: rgb(229, 229, 229);
 }
 
 .dark_mode {
-    --vector-circle:rgb(171, 129, 4);
-    --background: rgb(47, 47, 47);
-    --vector-point: rgb(187, 187, 187);
-    --text-color-black: rgb(255, 255, 255);
-    --background-proyectos: rgb(171, 129, 4);
-    --hover-home: #cfcfcf;
-    --whats-home:#00ff2f;
-
-
- 
-
+  --vector-circle: rgb(170, 131, 71);
+  --background: rgb(47, 47, 47);
+  --vector-point: rgb(153, 152, 152);
+  --text-color-black: rgb(255, 255, 255);
+  --background-proyectos: rgb(73, 72, 72);
+  --hover-home: #cfcfcf;
+  --whats-home: #00ff2f;
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
-

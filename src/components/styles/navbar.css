@@ -1,46 +1,23 @@
 .navbar__fixed {
-    width: 100vw;
+  width: 100vw;
+}
+
+.nombre {
+  color: red;
 }
 
 .contacto {
-    color: red;
-    animation: contact 2s infinite;
-}
-
-@keyframes contact {
-    0%{
-        transform: translateY(5px);
-        color: rgb(0, 0, 0)
-    }
-    25%{
-        transform: translateY(0px);
-
-        color: rgb(205, 7, 60)
-    }
-    50%{
-        transform: translateY(5px);
-        color: rgb(242, 242, 242)}
-    75%{
-        transform: translateY(0px);
-        /* transform: rotateY(180deg); */
-        color: rgb(17, 40, 249)}
-    
-        100%{
-            /* transform: rotateY(360deg); */
-        transform: translateY(5px);
-            
-            color:rgb(174, 174, 174)}
-    
+  color: rgb(0, 0, 0);
+  /* animation: contact 2s infinite; */
 }
 
 .content__flags {
-    width: 35px;
-   
-     display: flex;
-    gap: 0.5rem; 
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 60px;
-}
+  width: 35px;
 
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+}
