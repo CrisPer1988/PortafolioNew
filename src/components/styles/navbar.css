@@ -21,3 +21,16 @@
   bottom: 20px;
   right: 60px;
 }
+
+@media (max-width: 991px) {
+  .me-auto {
+    background-color: rgb(64, 64, 64);
+    width: 100vw;
+    position: absolute;
+    padding: 5px 0 5px 0;
+    right: 0;
+    /* top: 80px; */
+    margin-top: 20px;
+    text-align: center;
+  }
+}

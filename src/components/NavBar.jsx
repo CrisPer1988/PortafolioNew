@@ -14,7 +14,7 @@ const NavBar = () => {
         <Navbar
           style={{ backgroundColor: "rgb(64, 64, 64)", height: 80 }}
           fixed="top"
-          variant=""
+          variant="dark"
           expand="lg"
         >
           <Container>
@@ -43,25 +43,40 @@ const NavBar = () => {
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link style={{ color: "white" }} href="#home">
+              <Nav
+                className="me-auto"
+                // style={{ backgroundColor: --var, padding: 10 }}
+              >
+                <Nav.Link
+                  style={{ color: "white", marginLeft: 10 }}
+                  href="#home"
+                >
                   {t("navBar.home")}
                 </Nav.Link>
                 {/* <Nav.Link style={{ color: "white" }} href="#acercaDeMi">
                   {t("navBar.about-me")}
                 </Nav.Link> */}
-                <Nav.Link style={{ color: "white" }} href="#proyectos">
+                <Nav.Link
+                  style={{ color: "white", marginLeft: 10 }}
+                  href="#proyectos"
+                >
                   {t("navBar.projects")}
                 </Nav.Link>
-                <Nav.Link style={{ color: "white" }} href="#habilidades">
+                <Nav.Link
+                  style={{ color: "white", marginLeft: 10 }}
+                  href="#habilidades"
+                >
                   {t("navBar.abilities")}
                 </Nav.Link>
-                <Nav.Link style={{ color: "#E8AE1B" }} href="#contacto">
+                <Nav.Link
+                  style={{ color: "#E8AE1B", marginLeft: 10 }}
+                  href="#contacto"
+                >
                   {/* <h5 className="contacto"></h5> */}
                   {t("navBar.contact")}
                 </Nav.Link>
                 <Nav.Link
-                  style={{ color: "white" }}
+                  style={{ color: "white", marginLeft: 10 }}
                   href="/images/CV.pdf"
                   target="_blank"
                 >
