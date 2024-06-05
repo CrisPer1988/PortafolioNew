@@ -26,7 +26,7 @@ const Habilidades = () => {
       <div className="vector__habilidad3"></div>
       <div className="content__header-habilidades">
         <div className="text__habilidades">
-          <h2>{t("abilities.title")}</h2>
+          <h1>{t("abilities.title")}</h1>
           <p>{t("abilities.paragraph")}</p>
         </div>
       </div>

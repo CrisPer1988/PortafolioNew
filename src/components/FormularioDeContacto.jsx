@@ -20,7 +20,9 @@ const FormularioDeContacto = () => {
         className="form__items"
         onSubmit={handleSubmit}
       >
-        <h2>{t("contact.title")}</h2>
+        <h2 style={{ textAlign: "center", marginBottom: 40 }}>
+          {t("contact.title")}
+        </h2>
         <div className="item__form">
           <label htmlFor="name">{t("contact.labelName")}</label>
           <input
@@ -28,6 +30,7 @@ const FormularioDeContacto = () => {
             id="name"
             type="name"
             name="name"
+            style={{ height: 60, padding: 15, marginBottom: 35 }}
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
@@ -38,6 +41,7 @@ const FormularioDeContacto = () => {
             id="email"
             type="email"
             name="email"
+            style={{ height: 60, padding: 15, marginBottom: 35 }}
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
@@ -49,6 +53,7 @@ const FormularioDeContacto = () => {
             placeholder={t("contact.inputMessage")}
             id="message"
             name="message"
+            style={{ height: 95, padding: 15 }}
           />
           <ValidationError
             prefix="Message"
