@@ -3,11 +3,8 @@ export const proyectos = [
     id: 1,
     title: "DistribuNeitor",
     descripcion:
-      "Web diñada a medida para distribuidora de bebidas y comidas en San Rafael, Mendoza. Desde la web gestionan tanto los productos, stocks, precios, ventas, emprleados, como asi tambien la preventa. Los vendedores utilizan la web para realizar los pedidos de manera totalmente digital.",
+      "Web diñada a medida para distribuidora de bebidas y comidas en San Rafael, Mendoza. Desde la web gestionan tanto los productos, stocks, precios, ventas, empleados, como asi tambien la preventa. Los vendedores utilizan la web para realizar los pedidos de manera totalmente digital.",
     images: [
-      // {
-      //   img: "/images/distributor3.png",
-      // },
       {
         img: "/images/ok.jpg",
       },
