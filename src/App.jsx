@@ -27,6 +27,7 @@ function App() {
           <i className="bx bxs-moon moon__sun"></i>
         )}
       </div>
+      <h1 style={{ color: "black" }}>PLAYYY</h1>
       <NavBar />
       <Home mode={mode} />
       {/* <AcercaDeMi /> */}
