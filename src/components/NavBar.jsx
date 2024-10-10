@@ -77,7 +77,7 @@ const NavBar = () => {
                 </Nav.Link>
                 <Nav.Link
                   style={{ color: "white", marginLeft: 10 }}
-                  href="/images/CV.pdf"
+                  href="/images/CV-0109.pdf"
                   target="_blank"
                 >
                   CV <i className="bx bx-download"></i>
