@@ -33,7 +33,7 @@ const Habilidades = () => {
 
       <div className="habilidad__bar">
         {habilidades?.map((habilidad) => (
-          <div data-aos="fade-down" duration="6000" key={habilidad.id}>
+          <div key={habilidad.id}>
             <div className="content__circle">
               <h4>{habilidad.name}</h4>
               <div

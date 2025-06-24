@@ -159,13 +159,13 @@
 }
 
 .modal-content {
-  max-width: 95vw;
-  max-height: 95vh;
+  max-width: 90vw;
+  max-height: 90vh;
   border-radius: var(--border-radius-lg);
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--shadow-2xl);
   position: relative;
-  background: var(--background);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,9 +176,11 @@
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: none;
+  object-fit: contain;
   display: block;
   border-radius: var(--border-radius-md);
+  background: var(--background);
+  box-shadow: var(--shadow-xl);
 }
 
 /* Botón de cerrar modal */
