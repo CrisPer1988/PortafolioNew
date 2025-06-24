@@ -1,147 +1,259 @@
 .contaniner__habilidades {
-  padding: 160px 15px 10px 15px;
+  padding: var(--spacing-3xl) var(--spacing-xl);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: 15px;
-  margin-top: 30px;
   position: relative;
-  color: var(--text-color-black);
+  color: var(--text-primary);
+  background: var(--background);
+  min-height: 100vh;
 }
 
+/* Elementos decorativos */
 .vector__habilidad {
   width: 400px;
   height: 400px;
-  background-color: var(--vector-circle);
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  background: var(--gradient-primary);
   border-radius: 50%;
   position: absolute;
   top: 5%;
   left: 5%;
-  z-index: -1;
+  z-index: 1;
+  opacity: 0.1;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.vector__habilidad2 {
+  width: 300px;
+  height: 300px;
+  background: var(--gradient-secondary);
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  z-index: 1;
+  opacity: 0.1;
+  animation: pulse 4s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
 .vector__habilidad3 {
   width: 250px;
   height: 250px;
-  background-color: var(--vector-circle);
-  border-bottom: 2px solid black;
+  background: var(--gradient-accent);
   border-radius: 50%;
   position: absolute;
   top: 80px;
   right: 280px;
-  z-index: -1;
+  z-index: 1;
+  opacity: 0.1;
+  animation: pulse 4s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
+/* Header de la sección */
 .content__header-habilidades {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: var(--spacing-3xl);
+  position: relative;
+  z-index: 10;
+  animation: fadeInUp 1s ease-out;
 }
 
 .text__habilidades {
-  font-size: 1.3rem;
   text-align: center;
-  font-size: 1.1rem;
+  max-width: 800px;
 }
 
-.lista__habilidades {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.text__habilidades h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-lg);
+}
+
+.text__habilidades p {
   font-size: 1.2rem;
-
-  padding: 30px 0 50px 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
 }
 
-.lista__habilidades li {
-  margin: 0 auto;
-}
-
-.img__habilidades {
-  width: 100px;
-  transition: transform 0.5s;
-  border-radius: 50%;
-}
-
-li {
-  list-style: none;
-}
-
+/* Grid de habilidades */
 .habilidad__bar {
-  padding: 100px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-2xl);
   place-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
+/* Tarjetas de habilidades */
 .content__circle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--gradient-glass);
+  backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-2xl);
+  padding: var(--spacing-xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+  animation: fadeInUp 1s ease-out;
 }
 
+.content__circle:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-2xl);
+}
+
+.content__circle h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+/* Círculo de progreso */
 .circle {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 24px;
-  z-index: -50;
-  width: 130px;
-  height: 130px;
-  min-width: 80px;
-  min-height: 80px;
+  width: 150px;
+  height: 150px;
+  min-width: 120px;
+  min-height: 120px;
+  position: relative;
+  margin-bottom: var(--spacing-lg);
 }
 
 .second__circle {
-  width: 95px;
-  height: 95px;
-  background-color: rgb(238, 238, 238);
+  width: 110px;
+  height: 110px;
+  background: var(--background);
   border-radius: 50%;
-  z-index: 0;
   position: absolute;
+  z-index: 2;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .img__progress {
-  max-width: 74px;
-  z-index: 1;
+  max-width: 80px;
+  z-index: 3;
   border-radius: 50%;
-  animation: scale 1.8s infinite;
+  animation: float 3s ease-in-out infinite;
+  transition: var(--transition-normal);
 }
 
-@keyframes scale {
-  0% {
-    transform: rotate(30deg);
+.content__circle:hover .img__progress {
+  transform: scale(1.1);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* Lista de habilidades (opcional) */
+.lista__habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-2xl) 0;
+  margin-top: var(--spacing-2xl);
+}
+
+.lista__habilidades li {
+  background: var(--gradient-glass);
+  backdrop-filter: blur(10px);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-normal);
+}
+
+.lista__habilidades li:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  background: var(--gradient-primary);
+  color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .contaniner__habilidades {
+    padding: var(--spacing-2xl) var(--spacing-lg);
   }
-  50% {
-    transform: rotate(-30deg);
+  
+  .text__habilidades h1 {
+    font-size: 2.5rem;
   }
-  100% {
-    transform: rotate(30deg);
+  
+  .habilidad__bar {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-xl);
   }
 }
 
 @media (max-width: 992px) {
   .contaniner__habilidades {
-    padding: 10px;
+    padding: var(--spacing-xl) var(--spacing-md);
   }
-
+  
   .vector__habilidad3 {
     top: 120px;
     right: 60px;
     width: 160px;
     height: 160px;
   }
+  
+  .habilidad__bar {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .circle {
+    width: 130px;
+    height: 130px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  
+  .second__circle {
+    width: 95px;
+    height: 95px;
+  }
+  
+  .img__progress {
+    max-width: 70px;
+  }
 }
 
 @media (max-width: 850px) {
   .habilidad__bar {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .content__circle {
+    padding: var(--spacing-lg);
+  }
+  
+  .content__circle h4 {
+    font-size: 1.1rem;
   }
 }
 
@@ -165,31 +277,49 @@ li {
     width: 160px;
     height: 160px;
   }
+  
+  .text__habilidades h1 {
+    font-size: 2rem;
+  }
+  
+  .text__habilidades p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
   .contaniner__habilidades {
-    padding: 5px;
-  }
-
-  .content__img-habilidad {
-    width: 120px;
-    margin: 15px auto;
-  }
-
-  .img__habilidades {
-    width: 90px;
-  }
-
-  .habilidad__grid {
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    padding: var(--spacing-lg) var(--spacing-sm);
   }
 
   .habilidad__bar {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 25px 10px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  
+  .content__circle {
+    padding: var(--spacing-md);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  
+  .second__circle {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .img__progress {
+    max-width: 60px;
+  }
+  
+  .content__circle h4 {
+    font-size: 1rem;
   }
 }
 
@@ -197,18 +327,13 @@ li {
   .lista__habilidades {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
-    gap: 0.2rem;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
   }
-
+  
   .lista__habilidades li {
-    font-size: 1rem;
-    padding: 5px;
-    border-radius: 10px;
-  }
-
-  .img__habilidades {
-    width: 80px;
+    padding: var(--spacing-sm);
+    font-size: 0.9rem;
   }
 }
 
@@ -216,16 +341,20 @@ li {
   .circle {
     width: 80px;
     height: 80px;
+    min-width: 60px;
+    min-height: 60px;
   }
-
+  
   .second__circle {
     width: 60px;
     height: 60px;
   }
-
+  
   .img__progress {
     max-width: 50px;
-    z-index: 1;
-    border-radius: 50%;
+  }
+  
+  .content__circle h4 {
+    font-size: 0.9rem;
   }
 }

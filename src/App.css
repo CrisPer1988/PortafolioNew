@@ -1,48 +1,70 @@
 .App {
-  /* max-width: 1400px; */
   margin: 0 auto;
-  /* background-color: rgb(26, 26, 26); */
-  /* background-color: rgb(4, 4, 61); */
-  background-color: var(--background);
+  background: var(--background);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
+/* Botón de modo oscuro modernizado */
 .mode {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  /* background-color: red; */
+  border-radius: var(--border-radius-full);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 20;
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+  z-index: 1000;
+  background: var(--gradient-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
-  top: 70px;
-  right: 20px;
+  top: 100px;
+  right: 30px;
+ 
+  box-shadow: var(--shadow-lg);
+}
+
+.mode:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
 }
 
 .moon__sun {
-  font-size: 2.5rem;
-  color: var(--text-color-black);
-  animation: moveSun 1.8s infinite;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+ 
 }
 
-@keyframes moveSun {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.mode:hover .moon__sun {
+  color: var(--primary);
 }
 
-@media (max-width: 500px) {
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mode {
+    width: 50px;
+    height: 50px;
+    top: 80px;
+    right: 20px;
+  }
+  
   .moon__sun {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mode {
+    width: 45px;
+    height: 45px;
+    top: 70px;
+    right: 15px;
+  }
+  
+  .moon__sun {
+    font-size: 1.3rem;
   }
 }

@@ -6,10 +6,19 @@ import { useTranslation } from "react-i18next";
 
 const FormularioDeContacto = () => {
   const [t, i18next] = useTranslation("contact");
-
   const [state, handleSubmit] = useForm("xnqyongg");
+
   if (state.succeeded) {
-    return confirm("Gracias por contactarme!!! A la brevedad te respondere");
+    return (
+      <div className="content__form">
+        <div className="form__items">
+          <h2>¡Gracias por contactarme!</h2>
+          <p style={{ textAlign: "center", fontSize: "1.1rem", color: "var(--text-light)" }}>
+            Te responderé a la brevedad posible.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -20,20 +29,20 @@ const FormularioDeContacto = () => {
         className="form__items"
         onSubmit={handleSubmit}
       >
-        <h2 style={{ textAlign: "center", marginBottom: 40 }}>
-          {t("contact.title")}
-        </h2>
+        <h2>{t("contact.title")}</h2>
+        
         <div className="item__form">
           <label htmlFor="name">{t("contact.labelName")}</label>
           <input
             placeholder={t("contact.inputName")}
             id="name"
-            type="name"
+            type="text"
             name="name"
-            style={{ height: 60, padding: 15, marginBottom: 35 }}
+            required
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
+        
         <div className="item__form">
           <label htmlFor="email">{t("contact.labelEmail")}</label>
           <input
@@ -41,31 +50,31 @@ const FormularioDeContacto = () => {
             id="email"
             type="email"
             name="email"
-            style={{ height: 60, padding: 15, marginBottom: 35 }}
+            required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         <div className="item__form">
-          <label htmlFor="">{t("contact.labelMessage")}</label>
+          <label htmlFor="message">{t("contact.labelMessage")}</label>
           <textarea
-            className="puto"
             placeholder={t("contact.inputMessage")}
             id="message"
             name="message"
-            style={{ height: 95, padding: 15 }}
+            required
           />
           <ValidationError
             prefix="Message"
             field="message"
             errors={state.errors}
           />
+          
           <button
             className="btn__form"
             type="submit"
             disabled={state.submitting}
           >
-            Enviar
+            <span>{state.submitting ? "Enviando..." : "Enviar"}</span>
           </button>
         </div>
       </form>

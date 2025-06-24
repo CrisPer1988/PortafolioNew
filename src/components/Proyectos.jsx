@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import imgData from "../utils/imgData";
 import "./styles/proyectos.css";
-import Nav from "react-bootstrap/Nav";
 import "aos/dist/aos.css";
 import Aos from "aos";
-import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { useTranslation } from "react-i18next";
 import { proyectos } from "../utils/proyectos";
-import { proyectoActual } from "../utils/proyectoActual";
 
 const Proyectos = () => {
   const [t, i18n] = useTranslation("projects");
@@ -38,17 +33,15 @@ const Proyectos = () => {
       >
         <div className="vector__proyectos">:::::</div>
         <div className="vector__proyectos vector__proyectos2">:::::</div>
-        <div>
+        
+        <div className="proyectos-container">
           <div className="text__proyectos">
             <h1>{t("projects.title")}</h1>
             <p>{t("projects.paragraph")}</p>
           </div>
-        </div>
 
-        <div>
           {proyectos.map((proyecto, i) => (
             <div
-              style={{ marginTop: 60 }}
               className={
                 i % 2 === 0 ? "nuevo_proyectos" : "nuevo_proyectos_reverse"
               }
@@ -61,25 +54,31 @@ const Proyectos = () => {
 
               <div className="content_imgs">
                 {proyecto.images.map((image, i) => (
-                  <div key={i}>
-                    <img
-                      style={{
-                        display: "flex",
-                        padding: 10,
-                        maxHeight: 400,
-                        objectFit: "contain",
-                      }}
-                      src={image.img}
-                      alt=""
-                      onClick={() => openModal(image.img)}
-                    />
-                  </div>
+                  <img
+                    key={i}
+                    src={image.img}
+                    alt={`${proyecto.title} - Imagen ${i + 1}`}
+                    onClick={() => openModal(image.img)}
+                    loading="lazy"
+                  />
                 ))}
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal para mostrar imágenes - fuera del contenedor principal */}
+      {selectedImage && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              <i className="bx bx-x"></i>
+            </button>
+            <img src={selectedImage} alt="Vista ampliada" />
+          </div>
+        </div>
+      )}
     </>
   );
 };

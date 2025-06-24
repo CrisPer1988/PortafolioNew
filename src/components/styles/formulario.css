@@ -1,76 +1,250 @@
 .content__form {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  padding: 50px 10px 10px 10px;
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-3xl) var(--spacing-xl);
   align-items: center;
-  color: rgb(255, 255, 255);
-  /* background-image: url("/src/assets/contacto.png.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; */
-  background-color: rgb(35, 35, 35);
+  color: var(--text-light);
+  background: var(--gradient-dark);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
 }
 
+/* Elementos decorativos de fondo */
+.content__form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+  z-index: 1;
+}
+
+/* Contenedor del formulario */
+.form__items {
+  width: 100%;
+  max-width: 600px;
+  background: var(--gradient-glass);
+  backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-2xl);
+  padding: var(--spacing-3xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-2xl);
+  position: relative;
+  z-index: 10;
+  animation: fadeInUp 1s ease-out;
+}
+
+.form__items h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Campos del formulario */
 .item__form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: var(--spacing-xl);
+  position: relative;
 }
 
-.form__items {
-  width: 70%;
+.item__form label {
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.1rem;
+  transition: var(--transition-normal);
 }
 
-.item__form input {
-  width: 100%;
-  padding: 5px;
-  box-shadow: 4px 3px 3px rgb(118, 118, 118);
-  border-radius: 15px;
-}
-
+.item__form input,
 .item__form textarea {
   width: 100%;
-  padding: 5px;
-  box-shadow: 4px 3px 3px rgb(118, 118, 118);
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-lg);
+  color: var(--text-light);
+  font-size: 1rem;
+  transition: var(--transition-normal);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
 }
 
+.item__form input::placeholder,
+.item__form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.item__form input:focus,
+.item__form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+.item__form input:hover,
+.item__form textarea:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Textarea específico */
+.item__form textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* Botón de envío */
 .btn__form {
-  margin: 60px 0;
   width: 100%;
   height: 60px;
   border: none;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 5px;
-  box-shadow: 4px 3px 3px rgb(118, 118, 118);
+  border-radius: var(--border-radius-full);
+  background: var(--gradient-primary);
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-lg);
+  margin-top: var(--spacing-lg);
+  position: relative;
+  overflow: hidden;
 }
 
+.btn__form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-secondary);
+  transition: var(--transition-normal);
+  z-index: 1;
+}
+
+.btn__form:hover::before {
+  left: 0;
+}
+
+.btn__form:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.btn__form:active {
+  transform: translateY(-1px);
+}
+
+.btn__form:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn__form span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Línea divisoria */
 hr {
   width: 100%;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  margin: var(--spacing-2xl) 0;
 }
 
-/* input {
-    border-radius: 15px;
-} */
-
-.puto {
-  border-radius: 15px;
+/* Mensajes de error */
+.error-message {
+  color: #ef4444;
+  font-size: 0.9rem;
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: var(--border-radius-md);
+  border-left: 3px solid #ef4444;
 }
 
-@media (max-width: 400px) {
+/* Mensaje de éxito */
+.success-message {
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: var(--border-radius-md);
+  border-left: 3px solid var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .content__form {
-    padding: 10px;
+    padding: var(--spacing-2xl) var(--spacing-md);
   }
-
-  .icons__footer {
-    gap: 1.5rem;
+  
+  .form__items {
+    padding: var(--spacing-2xl);
+  }
+  
+  .form__items h2 {
     font-size: 2rem;
   }
+  
+  .item__form input,
+  .item__form textarea {
+    padding: var(--spacing-md);
+  }
+  
+  .btn__form {
+    height: 55px;
+    font-size: 1rem;
+  }
+}
 
-  .item__icons {
-    width: 40px;
-    height: 40px;
+@media (max-width: 480px) {
+  .content__form {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+  
+  .form__items {
+    padding: var(--spacing-xl);
+  }
+  
+  .form__items h2 {
+    font-size: 1.8rem;
+  }
+  
+  .item__form label {
+    font-size: 1rem;
+  }
+  
+  .item__form input,
+  .item__form textarea {
+    padding: var(--spacing-sm);
+    font-size: 0.9rem;
+  }
+  
+  .btn__form {
+    height: 50px;
+    font-size: 0.9rem;
   }
 }

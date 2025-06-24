@@ -1,227 +1,294 @@
 .container__home {
-    padding-top: 60px;
+    padding-top: 80px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* background-image: url("/images/background-home.png");
-    background-repeat: no-repeat;
-    background-position: 100% 100%; */
     position: relative;
-    color: var(--text-color-black);
+    color: var(--text-primary);
+    background: var(--background);
 }
 
+/* Elementos decorativos modernos */
 .circle__home {
-    width: 300px;
-    height: 300px;
-    background-color: var(--vector-circle);
-
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-secondary);
     border-radius: 50%;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    animation: pulse 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+.vector__home,
+.vector__home1,
+.vector__home2 {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--text-muted);
+    letter-spacing: 20px;
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
 }
 
 .vector__home {
-    position: absolute;
     bottom: 120px;
     left: 66px;
-    font-size: 3rem;
-    color: var(--vector-point);
-    letter-spacing: 15px;
+    animation-delay: 0s;
 }
 
-
-
 .vector__home1 {
-    position: absolute;
     bottom: 100px;
     left: 50px;
-    font-size: 3rem;
-    color: var(--vector-point);
-    letter-spacing: 15px;
-
+    animation-delay: 2s;
 }
 
 .vector__home2 {
-    position: absolute;
     top: 100px;
     right: 50px;
-    font-size: 3rem;
-    letter-spacing: 15px;
-    color: var(--vector-point);
-
+    animation-delay: 4s;
 }
 
 .vector__home3 {
-    width: 80px;
-    height: 80px;
-    background-color: var(--vector-circle);
-
+    width: 100px;
+    height: 100px;
+    background: var(--gradient-primary);
     border-radius: 50%;
     position: absolute;
     top: 100px;
     left: 50px;
-    font-size: 3rem;
+    opacity: 0.2;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
 }
 
 .vector__home4 {
-    width: 120px;
-    height: 120px;
-    
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid var(--primary);
     position: absolute;
     bottom: 30px;
     right: -20px;
-    font-size: 3rem;
+    opacity: 0.3;
+    animation: float 7s ease-in-out infinite;
+    animation-delay: 3s;
 }
 
 .complemet__vector4 {
-    width: 110px;
-    height: 110px;
-    background-color: var(--vector-circle);
+    width: 130px;
+    height: 130px;
+    background: var(--gradient-accent);
     padding: 10px;
     border-radius: 50%;
     position: absolute;
-    /* bottom: 100px;
-    right: 50px; */
-    top: 6px;
-    left: 2px;
-    
-
+    top: 8px;
+    left: 8px;
+    opacity: 0.2;
 }
 
-
+/* Contenido principal */
 .content__text-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
-    background-color: transparent;
-    width: 100%;
-    height: 100vh;
-}
-
-
-.hover-text {
-    color: var(hover-home);
-    animation: whats 1.5s infinite;
-}
-
-.whats__home {
-    color: var(--whats-home);
-    font-size: 4rem;
-    animation: whats 0.8s infinite;
-}
-
-@keyframes whats {
-    0%{transform: scale(0)}
-    50%{transform: scale(1)}
-    100%{transform: scale(0)}
-    
-}
-
-.finger__hover {
-    animation: move 02s infinite;
-    margin-bottom: 50px;
-    color: rgb(102, 102, 102);
-    font-family: fantasy;
-}
-
-.no {
-    display: none;
-}
-
-
-
-@keyframes move {
-    0%{transform: translateX(0)}
-    50%{transform: translateX(10px)}
-    100%{transform: translateX(0px)}
-    
-}
-
-.content__text-home img {
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    z-index: 1000;
-}
-
-.content__text-home h1, h3, h4, h5 {
+    text-align: center;
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border-radius: var(--border-radius-2xl);
+    padding: var(--spacing-3xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-2xl);
+    position: relative;
     z-index: 10;
-    font-size: 3rem;
-    
+    animation: fadeInUp 1s ease-out;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* .content__flags {
-    width: 35px;
-    z-index: 60000;
-    display: flex;
-    gap: 1rem;
+.content__text-home h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-lg);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInDown 1s ease-out 0.3s both;
+}
+
+.content__text-home h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.content__text-home h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    animation: fadeInUp 1s ease-out 0.9s both;
+}
+
+/* Efectos hover */
+.text__animation-hover {
+    transition: var(--transition-normal);
     cursor: pointer;
-
-    position: fixed;
-    top: 12px;
-    right: 80px;
-} */
-
-@media (max-width: 991px) {
-    /* .content__flags {
-        left: 20px;
-        top: 60px;
-    } */
 }
 
-@media (max-width: 500px) {
-    /* .content__flags {
-      
-        width: 25px;
-        gap: 0.5rem;
-        left: 168px;
-        top: 15px;
-        
-    } */
+.text__animation-hover:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
 
+/* Animaciones */
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.2;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .circle__home {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .content__text-home {
+        padding: var(--spacing-2xl);
+    }
+    
+    .content__text-home h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__home {
+        padding-top: 70px;
+    }
+    
+    .circle__home {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .content__text-home {
+        padding: var(--spacing-xl);
+        margin: 0 var(--spacing-md);
+    }
+    
+    .content__text-home h1 {
+        font-size: 2.5rem;
+    }
+    
+    .content__text-home h3 {
+        font-size: 1.3rem;
+    }
+    
+    .content__text-home h5 {
+        font-size: 1.1rem;
+    }
+    
+    .vector__home1,
+    .vector__home2 {
+        display: none;
+    }
+    
+    .vector__home3 {
+        width: 60px;
+        height: 60px;
+        top: 50px;
+        left: 30px;
+    }
+    
+    .vector__home4 {
+        width: 100px;
+        height: 100px;
+        bottom: 20px;
+        right: -10px;
+    }
+    
+    .complemet__vector4 {
+        width: 80px;
+        height: 80px;
+        top: 8px;
+        left: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content__text-home {
+        padding: var(--spacing-lg);
+        margin: 0 var(--spacing-sm);
+    }
+    
+    .content__text-home h1 {
+        font-size: 2rem;
+    }
+    
+    .content__text-home h3 {
+        font-size: 1.1rem;
+    }
+    
+    .content__text-home h5 {
+        font-size: 1rem;
+    }
+    
     .circle__home {
         width: 200px;
         height: 200px;
     }
-
-    .vector__home1 {
-        display: none;
+    
+    .vector__home {
+        font-size: 1.5rem;
+        letter-spacing: 15px;
+        bottom: 80px;
+        left: 30px;
     }
-
-    .vector__home2 {
-        display: none;
-    }
-
+    
     .vector__home3 {
-        left: 3px;
         width: 50px;
         height: 50px;
-       
+        top: 30px;
+        left: 20px;
     }
     
-}
-
-
-
-@media (max-width: 800px) {
-    .container__home {
-        flex-direction: column;
+    .vector__home4 {
+        width: 80px;
+        height: 80px;
+        bottom: 10px;
+        right: -5px;
     }
     
-}
-
-@media (max-width: 450px) {
-    .content__text-home {
-        padding: 0 8px;
+    .complemet__vector4 {
+        width: 60px;
+        height: 60px;
+        top: 8px;
+        left: 8px;
     }
-
-    .content__text-home h1, h4, h5 {
-        font-size: 2rem;
-    }
-    
 }
